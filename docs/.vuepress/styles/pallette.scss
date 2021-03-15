@@ -1,0 +1,23 @@
+:root {
+  scroll-behavior: smooth;
+  --main-gradient: linear-gradient(
+    130deg,
+    rgb(36, 198, 220),
+    rgb(84, 51, 255) 41.07%,
+    rgb(255, 0, 153) 76.05%
+  );
+}
+
+.new-tag {
+  display: inline-block;
+  color: white;
+  padding: 0 0.5rem;
+  border-radius: 4px;
+  background: linear-gradient(130deg, #24c6dc, #5433ff 41.07%, #ff0099 76.05%);
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+body {
+  background: black !important;
+}

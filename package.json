@@ -1,0 +1,16 @@
+{
+  "name": "hexo-theme-obsidianext-docs",
+  "version": "0.1.0",
+  "description": "Documentation for Hexo Theme ObsidiaNext.",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "main": "index.js",
+  "repository": "https://github.com/obsidianext/hexo-theme-obsidianext",
+  "author": "TriDiamond <code.tridiamond@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^2.0.0-alpha.26"
+  }
+}
