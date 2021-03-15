@@ -37,7 +37,7 @@ const config: UserConfig<DefaultThemeOptions> = {
 
     docsRepo: 'obsidianext/hexo-theme-obsidianext-docs',
 
-    docsDir: 'src',
+    docsDir: 'docs',
 
     locales: {
       '/': {
