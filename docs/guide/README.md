@@ -19,30 +19,3 @@ Of course, I could add in vuejs with the support of the default ejs template sys
 But in the modern frontend development trend, most web applications had switch to frameworks like Vue, React or Angular, because they are much easier and quicker for development. With the support of SPA for these frameworks, it would improve the user accessibility and interactions of the application.
 
 Thinking through the pros and cons, I had decided to use Vue3 as the framework for developing ObsidiaNext.
-
-## What is new in ObsidiaNext
-
-The main focus of ObsidiaNext, is to include all the main features in Obsidian and also the features that were requested in the issues for a long time.
-
-The first few versions will focus on the main features in Obsidian. The other focus is the new design for the whole blog, which includes modern web design ideas to make ObsidiaNext a more up-to-date theme.
-
-Lets us take a look at the feature list and plans for ObsidiaNext:
-
-### 🎨 THEME
-
-- <span class="tag new-tag">NEW</span> Light and dark theme support.
-- Modern magazine grid layout.
-- Modern gradient colour styles, adding more rich colours into the theme.
-
-### ⭐️ FEATURES
-
-- <span class="tag new-tag">NEW</span> `Featured section` - can add a feature meta to any post, those will be pinned into the feature section on the home page.
-- <span class="tag new-tag">NEW</span> `Instant multi-language support` - can dynamically switch the language of the main texts in the application.
-- <span class="tag wip-tag">WIP</span> `Custom pages` - can add any custom pages, need to use `customized menu` to display in the menu.
-- <span class="tag wip-tag">WIP</span> `Page navbar` - can setup a sidebar on specific page, act as the sub menu of the page.
-- <span class="tag wip-tag">WIP</span> `Latest comments` - added a widget showing the latest comments, supported using `gitalk` or `valine`.
-
-### 🛠 CUSTOMIZATION
-
-- <span class="tag new-tag">NEW</span> `Config Beian` - his feature is especially for China users, for those that need to put Beian info at the footer of the blog.
-- <span class="tag new-tag">NEW</span> `Customizable menu` - can customize your menu with internal links, external links, custom pages.

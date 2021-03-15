@@ -11,7 +11,7 @@ actions:
     type: secondary
 features:
   - title: 优雅 UI
-    details: 主题的主要设计理念是“简约并优雅”，Obsidian 2 自带 light 和 dark主题。
+    details: 主题的主要设计理念是“简约并优雅”，ObsidiaNext 自带 light 和 dark主题。
   - title: Vue3 驱动
     details: 享受由 Vue3 建立的单页面应用（SPA）所带来的更优雅，更友好的用户体验。
   - title: 高性能

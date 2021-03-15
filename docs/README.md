@@ -11,7 +11,7 @@ actions:
     type: secondary
 features:
   - title: Elegant UI
-    details: Main design concept of the theme is "simple and elegant", Obsidian 2 comes with light and dark theme.
+    details: Main design concept of the theme is "simple and elegant", ObsidiaNext comes with light and dark theme.
   - title: Vue3-Powered
     details: Enjoy the lightning fast SPA built by vue3, UI is much more elegant and user friendly.
   - title: Performance
