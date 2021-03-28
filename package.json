@@ -3,14 +3,14 @@
   "version": "0.1.0",
   "description": "Documentation for Hexo Theme ObsidiaNext.",
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:dev": "vuepress dev docs --clean-cache",
+    "docs:build": "vuepress build docs --clean-cache"
   },
   "main": "index.js",
   "repository": "https://github.com/obsidianext/hexo-theme-obsidianext",
   "author": "TriDiamond <code.tridiamond@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "vuepress": "^2.0.0-alpha.26"
+    "vuepress": "^2.0.0-beta.6"
   }
 }

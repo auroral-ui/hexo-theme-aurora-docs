@@ -13,6 +13,7 @@ export const zh: SidebarConfig = {
         '/zh/guide/theme.md',
         '/zh/guide/social.md',
         '/zh/guide/site-meta.md',
+        '/zh/guide/page.md',
         '/zh/guide/plugins.md',
       ],
     },

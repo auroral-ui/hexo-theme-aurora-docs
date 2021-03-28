@@ -13,6 +13,7 @@ export const en: SidebarConfig = {
         '/guide/theme.md',
         '/guide/social.md',
         '/guide/site-meta.md',
+        '/guide/page.md',
         '/guide/plugins.md',
       ],
     },
