@@ -13,7 +13,7 @@ Due to the fact that international CDN is extremely slow for China, therefore th
 
 Example:
 
-```yaml
+```yaml:no-line-numbers
 site_meta:
   # CDN switcher
   cdn: en
@@ -41,7 +41,7 @@ In the previous section, you can configure International and China CDN setup, th
 
 For example, if you would like to add `animate.css` style link when CDN is set to `en`:
 
-```html{30-34}
+```html{30-34}:no-line-numbers
 <!DOCTYPE html>
 <html lang="en">
   <head>

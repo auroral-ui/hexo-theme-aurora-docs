@@ -11,7 +11,7 @@ There are two different configuration files, one is for **Hexo itself** and one 
 . # Hexo project root.
 ├─ _config.yml # Hexo config file.
 └─ themes
-   └─ obsidianext # theme folder.
+   └─ Aurora # theme folder.
       └─ _config.yml # theme config file.
 ```
 
@@ -43,7 +43,7 @@ If you did not set an `avatar` url, the logo's url will be used instead.
 
 Site config demo:
 
-```yaml
+```yaml:no-line-numbers
 # Site Config
 site:
   subtitle: TriDiamond's Blog

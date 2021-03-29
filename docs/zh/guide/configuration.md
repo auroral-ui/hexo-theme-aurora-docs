@@ -11,7 +11,7 @@
 . # Hexo 项目根目录.
 ├─ _config.yml # Hexo 配置文件.
 └─ themes
-   └─ obsidianext # 主题文件夹.
+   └─ Aurora # 主题文件夹.
       └─ _config.yml # 主题配置文件.
 ```
 
@@ -43,7 +43,7 @@
 
 Site 配置例子：
 
-```yaml
+```yaml:no-line-numbers
 # Site Config
 site:
   subtitle: TriDiamond's Blog

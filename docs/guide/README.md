@@ -1,10 +1,10 @@
 # Introduction
 
-ObsidiaNext is the next generation of [hexo-theme-obsidian](https://github.com/TriDiamond/hexo-theme-obsidian) and its UI and features have been completely rewritten.
+Aurora is the next generation of [hexo-theme-obsidian](https://github.com/TriDiamond/hexo-theme-obsidian) and its UI and features have been completely rewritten.
 
 ## Compare to Obsidian
 
-The main significant difference between Obsidian and ObsidiaNext, is that ObsidiaNext is base on Vue3, which means its performance and user interactions are much better than Obsidian.
+The main significant difference between Obsidian and Aurora, is that Aurora is base on Vue3, which means its performance and user interactions are much better than Obsidian.
 
 Obsidian uses vanilla JavaScript and JQuery to support most of the user interaction and blog features. Of course, I am not saying using vanilla JavaScript and JQuery cannot build a fast and high-quality blog application. It's just using Vue is much more enjoyable for the developer and even more for the readers or viewers.
 
@@ -18,4 +18,4 @@ Of course, I could add in vuejs with the support of the default ejs template sys
 
 But in the modern frontend development trend, most web applications had switch to frameworks like Vue, React or Angular, because they are much easier and quicker for development. With the support of SPA for these frameworks, it would improve the user accessibility and interactions of the application.
 
-Thinking through the pros and cons, I had decided to use Vue3 as the framework for developing ObsidiaNext.
+Thinking through the pros and cons, I had decided to use Vue3 as the framework for developing Aurora.

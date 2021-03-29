@@ -6,7 +6,7 @@ const path = require('path')
 
 const config: UserConfig<DefaultThemeOptions> = {
   lang: 'en-US',
-  title: 'Hexo ObsidiaNext',
+  title: 'Hexo Aurora',
   description: 'Documentation of theme usage.',
 
   head: [
@@ -33,9 +33,9 @@ const config: UserConfig<DefaultThemeOptions> = {
   themeConfig: {
     logo: 'https://img-blog.csdnimg.cn/20210313122054101.png',
 
-    repo: 'obsidianext/hexo-theme-obsidianext',
+    repo: 'auroral-ui/hexo-theme-aurora',
 
-    docsRepo: 'obsidianext/hexo-theme-obsidianext-docs',
+    docsRepo: 'auroral-ui/hexo-theme-aurora-docs',
 
     docsDir: 'docs',
 
@@ -93,11 +93,11 @@ const config: UserConfig<DefaultThemeOptions> = {
     // 作为特例，默认语言可以使用 '/' 作为其路径。
     '/': {
       lang: 'en-US',
-      description: 'Simple and elegant theme for Hexo',
+      description: 'Futuristic auroral theme for Hexo',
     },
     '/zh/': {
       lang: 'zh-CN',
-      description: '简约并优雅的 Hexo 主题',
+      description: '迈向未来的 Hexo 极光主题',
     },
   },
 

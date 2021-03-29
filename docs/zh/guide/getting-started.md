@@ -7,7 +7,7 @@
 
 ## 手动安装
 
-本节将帮助您在现有的 Hexo 博客项目上安装 ObsidiaNext 主题。
+本节将帮助您在现有的 Hexo 博客项目上安装 Aurora 主题。
 
 - **步骤 1**: 在您的控制台中，进入我们的 Hexo 项目的根目录，然后进入 `themes/` 文件夹。
 
@@ -15,16 +15,16 @@
 cd themes
 ```
 
-- **步骤 2**: 克隆 `obsidianext` 主题的代码到 `obsidianext/` 文件夹。
+- **步骤 2**: 克隆 `Aurora` 主题的代码到 `aurora/` 文件夹。
 
 ```shell:no-line-numbers
-git clone https://github.com/obsidianext/hexo-theme-obsidianext-docs.git obsidianext
+git clone https://github.com/aurora-ui/hexo-theme-aurora.git aurora
 ```
 
-- **步骤 3**: 跳转到 `obsidianext/` 主题文件夹。
+- **步骤 3**: 跳转到 `aurora/` 主题文件夹。
 
 ```shell:no-line-numbers
-cd obsidianext
+cd aurora
 ```
 
 - **步骤 4**: 使用 [npm](https://www.npmjs.cn/getting-started/installing-node/) 或者 [yarn](https://www.yarnpkg.cn/getting-started/install) 来安装这个主题需要的依赖包。

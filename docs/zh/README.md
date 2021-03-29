@@ -11,7 +11,7 @@ actions:
     type: secondary
 features:
   - title: 优雅 UI
-    details: 主题的主要设计理念是“简约并优雅”，ObsidiaNext 自带 light 和 dark主题。
+    details: 主题的主要设计理念是基于当下流行的 “极光UI”。
   - title: Vue3 驱动
     details: 享受由 Vue3 建立的单页面应用（SPA）所带来的更优雅，更友好的用户体验。
   - title: 高性能
@@ -24,20 +24,18 @@ footer: MIT Licensed | Copyright © 2020-present TriDiamond
 ---
 
 <p align="center">
-  <img src="https://img.shields.io/github/v/release/obsidianext/hexo-theme-obsidianext">
-  <img src="https://img.shields.io/github/release-date/obsidianext/hexo-theme-obsidianext">
-  <img src="https://img.shields.io/github/license/obsidianext/hexo-theme-obsidianext">
+  <img src="https://img.shields.io/github/v/release/Aurora/hexo-theme-Aurora">
+  <img src="https://img.shields.io/github/release-date/Aurora/hexo-theme-Aurora">
+  <img src="https://img.shields.io/github/license/Aurora/hexo-theme-Aurora">
   <a href="https://app.netlify.com/sites/tridiamond/deploys">
   <img src="https://api.netlify.com/api/v1/badges/5faa571c-5a72-4882-ac3e-4b6942ecbb87/deploy-status"></a>
 </p>
 
-ObsidiaNext 实现的功能包括 Obsidian 中的所拥有的之外，也添加 issue 中提出到的功能。
+主题的主要设计理念是基于当下流行的“极光 UI”。**构建下一代用户界面设计**
 
-不过，最初的几个版本将专注于完成 Obsidian 中的功能，以及重新设计整个博客的界面。包括现代的网页设计思想，使 ObsidiaNext 成为一个更现代，更优雅的主题。
+## Aurora 有什么功能？
 
-## ObsdiaNext 有什么功能？
-
-**废话少说，让我们来看看《ObsidiaNext》的功能列表:**
+**废话少说，让我们来看看《Aurora》的功能列表:**
 
 ### ⭐️ 博客功能
 
@@ -73,7 +71,7 @@ ObsidiaNext 实现的功能包括 Obsidian 中的所拥有的之外，也添加 
 
 这些都是待定的功能，并还没有投入开发或者规划，但是未来可能会有。
 
-> **主题的 `QQ 909955326` 群中会不定时一起投票未来的功能，欢迎大家一起来共建更好的 ObsidiaNext 主题！**
+> **主题的 `QQ 909955326` 群中会不定时一起投票未来的功能，欢迎大家一起来共建更好的 Aurora 主题！**
 
 - **`图片库`** - _添加图片集，主要是用来看图片的。_
 - **`友情链接`** - _可以在你的博客中展示你的小伙伴们的博客。_

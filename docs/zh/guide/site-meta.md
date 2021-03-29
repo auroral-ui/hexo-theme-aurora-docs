@@ -41,7 +41,7 @@ site_meta:
 
 比如，现在你想添加 `anime.css` 的样式链接，并且我们的 CDN 配置设置为 `cn` 时：
 
-```html{26-30}
+```html{26-30}:no-line-numbers
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -111,7 +111,6 @@ site_meta:
     <!-- built files will be auto injected -->
   </body>
 </html>
-
 ```
 
 :::warning 注意

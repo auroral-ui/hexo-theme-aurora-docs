@@ -14,7 +14,7 @@
 
 如果你想把模式强制改为默认深色模式，就需要像下面这样配置。
 
-```yaml{2}
+```yaml{2}:no-line-numbers
 theme:
   dark_mode: true
 ```
@@ -23,7 +23,7 @@ theme:
 
 主题中多处使用了一个渐变颜色，这个渐变颜色一共由 3 个颜色组成。这 3 个颜色可以在主题配置里面设置。
 
-```yaml{5-8}
+```yaml{5-8}:no-line-numbers
 theme:
   # Gradient colors used for the theme
   # This consist of 3 gradient colors

@@ -15,16 +15,16 @@ This section will help you install the theme on an existing Hexo Blog project.
 cd themes
 ```
 
-- **Step 2**: Clone `obsidianext` theme into `obsidianext/` folder.
+- **Step 2**: Clone `Aurora` theme into `aurora/` folder.
 
 ```shell:no-line-numbers
-git clone https://github.com/obsidianext/hexo-theme-obsidianext-docs.git obsidianext
+git clone https://github.com/aurora-ui/hexo-theme-aurora.git aurora
 ```
 
-- **Step 3**: Go into `obsidianext/` theme folder.
+- **Step 3**: Go into `aurora/` theme folder.
 
 ```shell:no-line-numbers
-cd obsidianext
+cd aurora
 ```
 
 - **Step 4**: Installing all the dependencies needed for the theme. This requires you to have either [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) or [yarn](https://yarnpkg.com/getting-started/install) installed in your system.

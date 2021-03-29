@@ -18,7 +18,7 @@ Social config has the following properties:
 
 Example:
 
-```yaml
+```yaml:no-line-numbers
 socials:
   github: 'https://github.com/TriDiamond'
   twitter: ''

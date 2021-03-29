@@ -1,14 +1,14 @@
 # 菜单
 
-ObsidiaNext 主题的**菜单**是可以自主定义的，只需要通过在主题的 `_config.yaml` 中配置即可。
+Aurora 主题的**菜单**是可以自主定义的，只需要通过在主题的 `_config.yaml` 中配置即可。
 
 ## 默认菜单
 
-ObsidiaNext 拥有 3 个自带样式的页面，分别是**关于页**、**标签页**和**归档页**
+Aurora 拥有 3 个自带样式的页面，分别是**关于页**、**标签页**和**归档页**
 
 首页和关于页默认是开启的，但是标签和归档页就可以通过修改主题配置里面的 `menu` 配置来开启或者关闭。
 
-```yaml{2-3}
+```yaml{2-3}:no-line-numbers
 menu:
   Tags: true
   Archives: true
@@ -24,23 +24,23 @@ menu:
 
 如果现在我们想添加一个通往我们 github 项目的外部链接，这个时候我们就可以在 menu 配置中这样写：
 
-```yaml{4-7}
+```yaml{4-7}:no-line-numbers
 menu:
   Tags: true
   Archives: true
   # 一个 github 项目的外部链接
-  obsidianext:
-    name: 'ObsidiaNext'
-    path: 'https://github.com/obsidianext/hexo-theme-obsidianext'
+  Aurora:
+    name: 'Aurora'
+    path: 'https://github.com/Aurora/hexo-theme-Aurora'
 ```
 
 ### 多级菜单
 
-有时候我们还可能想分组一些链接，把一些链接放到二级导航里面。没问题，ObsidiaNext 的菜单系统也是支持多级菜单的。要创建一个多级菜单，我们只需要在 menu 的链接中添加一个 `children` 属性即可。
+有时候我们还可能想分组一些链接，把一些链接放到二级导航里面。没问题，Aurora 的菜单系统也是支持多级菜单的。要创建一个多级菜单，我们只需要在 menu 的链接中添加一个 `children` 属性即可。
 
 比如，现在我们想把我们所有的 github 项目链接都放入一个 projects 的主导航之下。我们就可以这样配置我们的 menu 选项：
 
-```yaml{4-13}
+```yaml{4-13}:no-line-numbers
 menu:
   Tags: true
   Archives: true
@@ -51,9 +51,9 @@ menu:
       obsidian:
         name: 'Obsidian Theme'
         path: 'https://github.com/tridiamond/hexo-theme-obsidian'
-      obsidianext:
-        name: 'ObsidiaNext Theme'
-        path: 'https://github.com/obsidianext/hexo-theme-obsidianext'
+      Aurora:
+        name: 'Aurora Theme'
+        path: 'https://github.com/Aurora/hexo-theme-Aurora'
 ```
 
 :::warning 注意
@@ -72,7 +72,7 @@ menu:
 
 假如现在我们有一个菜单叫 `联系我`，同时我们想这个菜单可以支持英语和中文。这个时候我们就需要在给它一个 i18n 的名字。首先我们可以在 menu 配置中设置这个导航：
 
-```yaml{7}
+```yaml{7}:no-line-numbers
 menu:
   Tags: true
   Archives: true
@@ -87,7 +87,7 @@ menu:
 
 因为我们在配置的是 `menu` 菜单的 i18n，所以我们需要在 menu 中添加 `contact` 这个参数。
 
-```json{12}
+```json{12}:no-line-numbers
 // 英文
 // src/locales/language/en.json
 {
@@ -104,7 +104,7 @@ menu:
 }
 ```
 
-```json{12}
+```json{12}:no-line-numbers
 // 中文
 // src/locales/language/cn.json
 {

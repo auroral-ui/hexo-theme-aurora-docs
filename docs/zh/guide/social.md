@@ -18,7 +18,7 @@
 
 例子:
 
-```yaml
+```yaml:no-line-numbers
 socials:
   github: 'https://github.com/TriDiamond'
   twitter: ''

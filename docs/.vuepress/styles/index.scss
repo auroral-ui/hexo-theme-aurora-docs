@@ -137,6 +137,9 @@ html {
     }
     h1 {
       justify-content: center;
+      &:after {
+        width: 14rem;
+      }
     }
   }
 }
@@ -250,15 +253,27 @@ strong::selection {
 th {
   border: 1px solid var(--background-primary-alt) !important;
 }
+
 td,
 th {
   border: 1px solid var(--background-primary-alt) !important;
 }
+
 tr {
   border-top: 1px solid var(--background-primary-alt) !important;
 }
+
 tr:nth-child(2n) {
   background-color: var(--background-secondary);
+}
+
+.theme-default-content code {
+  overflow-wrap: break-word;
+  background-color: rgba(14, 210, 247, 0.05);
+  word-wrap: break-word;
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.3rem;
+  color: rgba(14, 210, 247, 0.9) !important;
 }
 
 /* Remove blockquote left margin */

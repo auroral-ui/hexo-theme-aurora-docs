@@ -11,7 +11,7 @@ actions:
     type: secondary
 features:
   - title: Elegant UI
-    details: Main design concept of the theme is "simple and elegant", ObsidiaNext comes with light and dark theme.
+    details: Main design concept of the theme is base on the trending "Aurora UI".
   - title: Vue3-Powered
     details: Enjoy the lightning fast SPA built by vue3, UI is much more elegant and user friendly.
   - title: Performance
@@ -24,20 +24,18 @@ footer: MIT Licensed | Copyright © 2020-present TriDiamond
 ---
 
 <p align="center">
-  <img src="https://img.shields.io/github/v/release/obsidianext/hexo-theme-obsidianext">
-  <img src="https://img.shields.io/github/release-date/obsidianext/hexo-theme-obsidianext">
-  <img src="https://img.shields.io/github/license/obsidianext/hexo-theme-obsidianext">
+  <img src="https://img.shields.io/github/v/release/auroral-ui/hexo-theme-aurora">
+  <img src="https://img.shields.io/github/release-date/auroral-ui/hexo-theme-aurora">
+  <img src="https://img.shields.io/github/license/auroral-ui/hexo-theme-aurora">
   <a href="https://app.netlify.com/sites/tridiamond/deploys">
   <img src="https://api.netlify.com/api/v1/badges/5faa571c-5a72-4882-ac3e-4b6942ecbb87/deploy-status"></a>
 </p>
 
-The main focus of `ObsidiaNext`, is to include all the main features in Obsidian and also the features that were requested in the issues for a long time.
+Main design concept of the theme is base on the trending "Aurora UI". **Building the next generation User Interface designs.**
 
-The first few versions will focus on the main features in Obsidian. The other focus is the new design for the whole blog, which includes modern web design ideas to make ObsidiaNext become one the best theme out there.
+## What's in Aurora?
 
-## What's in ObsidiaNext?
-
-**Let's us take a look at the feature list and plans for ObsidiaNext:**
+**Let's us take a look at the feature list and plans for Aurora:**
 
 ### ⭐️ Features
 
@@ -75,9 +73,9 @@ The first few versions will focus on the main features in Obsidian. The other fo
 
 ## What might be coming?
 
-What ObsidiaNext might add in the future.
+What Aurora might add in the future.
 
-> **Will host voting events in [Discord](https://discord.gg/VC7CrYfds5) from time to time. You are welcome to come build ObsidiaNext together!**
+> **Will host voting events in [Discord](https://discord.gg/VC7CrYfds5) from time to time. You are welcome to come build Aurora together!**
 
 - **`Image Gallery`** - _Adding an image gallery page._
 - **`Links of friends`** - _Allow you to list all your friends' blogs._

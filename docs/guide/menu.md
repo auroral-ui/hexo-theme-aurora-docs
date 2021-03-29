@@ -4,11 +4,11 @@ The **menus** in ObsidianNext theme can be highly customized in the theme `_conf
 
 ## Default Menus
 
-ObsidiaNext is packed with three styled pages, **about** page, **tags** page and **archives** page.
+Aurora is packed with three styled pages, **about** page, **tags** page and **archives** page.
 
 **Home** page and **About** page are enabled by default, where **tags** page and **archives** page can be configured in the `menu` section of the theme config file.
 
-```yaml{2-3}
+```yaml{2-3}:no-line-numbers
 menu:
   Tags: true
   Archives: true
@@ -18,29 +18,29 @@ You can also set any of the above to `false` to disable certain page you don't w
 
 ## Custom Menus
 
-Other than the default pages packed with ObsidiaNext, we can also add in any **pages** or **external links** to our main menus.
+Other than the default pages packed with Aurora, we can also add in any **pages** or **external links** to our main menus.
 
 ### External Link
 
 For example, if we want to add a external link to your github project, you can do that by configuring your menu like this:
 
-```yaml{4-7}
+```yaml{4-7}:no-line-numbers
 menu:
   Tags: true
   Archives: true
   # External link for a github repo
-  obsidianext:
-    name: 'ObsidiaNext'
-    path: 'https://github.com/obsidianext/hexo-theme-obsidianext'
+  Aurora:
+    name: 'Aurora'
+    path: 'https://github.com/Aurora/hexo-theme-Aurora'
 ```
 
 ### Nested Links
 
-Sometime you would want to group a set of links into a sub-menu. The good news is ObsidiaNext also support nested links. To create a nested link, all we have to do is add in a `children` property to the menu.
+Sometime you would want to group a set of links into a sub-menu. The good news is Aurora also support nested links. To create a nested link, all we have to do is add in a `children` property to the menu.
 
 For example we want to have a **projects** menu, which include all the projects links as sub-menu links. This is how you would configure it:
 
-```yaml{4-13}
+```yaml{4-13}:no-line-numbers
 menu:
   Tags: true
   Archives: true
@@ -51,9 +51,9 @@ menu:
       obsidian:
         name: 'Obsidian Theme'
         path: 'https://github.com/tridiamond/hexo-theme-obsidian'
-      obsidianext:
-        name: 'ObsidiaNext Theme'
-        path: 'https://github.com/obsidianext/hexo-theme-obsidianext'
+      Aurora:
+        name: 'Aurora Theme'
+        path: 'https://github.com/Aurora/hexo-theme-Aurora'
 ```
 
 :::warning NOTE
@@ -74,7 +74,7 @@ To allow our menu change base on our blog's current locale, we need to give our 
 
 If you have an I18n menu called `Contact Me` and it's i18n name is `contact`. You will need to configure your menu config like this:
 
-```yaml{7}
+```yaml{7}:no-line-numbers
 menu:
   Tags: true
   Archives: true
@@ -89,7 +89,7 @@ The `i18n` attribute is used to set the i18n name configured in `src/locales/lan
 
 Since this I18n name is for the menu, therefore you need to add this name inside `menu`.
 
-```json{11}
+```json{11}:no-line-numbers
 // src/locales/language/en.json
 {
   "menu": {
