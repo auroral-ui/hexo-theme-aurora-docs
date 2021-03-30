@@ -11,7 +11,7 @@
 . # Hexo 项目根目录.
 ├─ _config.yml # Hexo 配置文件.
 └─ themes
-   └─ Aurora # 主题文件夹.
+   └─ aurora # 主题文件夹.
       └─ _config.yml # 主题配置文件.
 ```
 

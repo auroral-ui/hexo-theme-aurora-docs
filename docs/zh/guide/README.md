@@ -1,8 +1,14 @@
 # 介绍
 
-Aurora 是基于第一代的 [hexo-theme-obsidian](https://github.com/TriDiamond/hexo-theme-obsidian)，UI 和基础功能都完全重写了。
+我的第一个主题是 [hexo-theme-obsidian](https://github.com/TriDiamond/hexo-theme-obsidian)，它得到了相当多的关注。很多博主喜欢这个主题，但后来这个主题变得有点难以维护，因为它没有使用像 Vue 或 React 这样的框架。
 
-## 与第一代 Obsidian 对比
+从那时起，我开始考虑使用 Vue 重构主题，所以我开始了使用 Vue 构建 Hexo 主题之路。
+
+当我重构 Obsidian 时，我发现一些用户界面并没有做到极致，并且我注意到 UI 设计中的“极光 UI”趋势。(这就是 UI 元素使用渐变颜色的趋势)，最后我决定使用流行的 UI 设计元素来制作一个全新的主题。
+
+**Aurora 是使用极光颜色和 UI 元素的下一代主题。它给你平滑流畅的色彩和未来感**
+
+## 与 Obsidian 相比
 
 Aurora 与 Obsidian 的最大区别在于，Aurora 是基于 Vue3 构建的，这就意味着它的性能和用户交互体验都比上一代要好得多。
 

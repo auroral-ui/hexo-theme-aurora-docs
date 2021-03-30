@@ -62,9 +62,11 @@ The parent link of a nested link won't need a `path` property, because if it's c
 Even if you set a `path` for the parent link, the path link will be ignored.
 :::
 
-### Internal Link <Badge type="warning" text="WIP" vertical="middle" />
+### Internal Link
 
-WIP
+:::tip
+Internal links can be added with a custom page. Please refer to the [Page](/guide/page.html) section of the document for usage details.
+:::
 
 ## I18n Menu
 

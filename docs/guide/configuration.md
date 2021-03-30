@@ -11,7 +11,7 @@ There are two different configuration files, one is for **Hexo itself** and one 
 . # Hexo project root.
 ├─ _config.yml # Hexo config file.
 └─ themes
-   └─ Aurora # theme folder.
+   └─ aurora # theme folder.
       └─ _config.yml # theme config file.
 ```
 

@@ -1,6 +1,12 @@
 # Introduction
 
-Aurora is the next generation of [hexo-theme-obsidian](https://github.com/TriDiamond/hexo-theme-obsidian) and its UI and features have been completely rewritten.
+My very first theme is [hexo-theme-obsidian](https://github.com/TriDiamond/hexo-theme-obsidian) which got quite a bit of attention. A lot of bloggers loved this theme, but later on the theme gets a bit hard to maintain due to the fact that it's not using a framework like Vue or React.
+
+Ever since than, I start to think about refactoring that theme using Vue, and that's when I started my journey of using Vue to build a Hexo theme.
+
+As I was refactoring Obsidian, I figure some of the user interface isn't as fine tuned as it should be, and as I notice the "Aurora UI" trend in UI designs. (Know as the trend of using gradient colors for UI elements.), at the end I decided to make a brand new theme using the popular UI design elements.
+
+**Aurora is a next generation theme using Aurora colours and UI elements. It give you the feel of smooth flow of colours and a futuristic feeling.**
 
 ## Compare to Obsidian
 

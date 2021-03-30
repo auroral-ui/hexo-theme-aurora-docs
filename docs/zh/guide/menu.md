@@ -62,9 +62,11 @@ menu:
 就算我们给顶级链接配置了 `path`，这个 path 地址也会被忽略的。
 :::
 
-### 内部链接 <Badge type="warning" text="开发中" vertical="middle" />
+### 内部链接
 
-开发中
+:::tip
+内部链接需要结合自定义页面使用，这部分的使用指南请移步到文档的[页面](/zh/guide/page.html)指南中详细了解。
+:::
 
 ## I18n 菜单
 

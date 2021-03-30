@@ -57,12 +57,16 @@ author: author-1
 ---
 ```
 
+:::tip
+If no `author` attribute is set for an post, the default author of the blog will be used as the author of the post.
+:::
+
 ## Comments
 
-This theme currently supports two different comment plugins. You can use the `enable` config to turn on one of the following comment plugin.
+This theme currently supports two different comment plugins. You can use the `enable` attribute to turn on one of the following comment plugin.
 
 :::tip
-If you turn both comment plugins, **Gitalk** will be used over **Valine**.
+If you turned `on` both comment plugins, **Gitalk** will be used over **Valine**.
 :::
 
 ### Gitalk
@@ -83,23 +87,23 @@ Config attributes:
 | `distractionFreeMode` | Facebook-like distraction, `true` to turn on, `false` to turn off.                                                                                                                                                              |
 |    `recentComment`    | To enable recent comment feature.                                                                                                                                                                                               |
 
-For more usage information, go to [Gitalk's]() repo.
+For more usage information, go to [Gitalk's](https://github.com/gitalk/gitalk) repo.
 
 ### Valine
 
 Config attributes:
 
-|   Attributes    | Description                                   |
-| :-------------: | :-------------------------------------------- |
-|    `enable`     | **true** to enable, **false** to disable.     |
-|    `app_id`     | **app_id** is provided by your Leancloud APP  |
-|    `app_key`    | **app_key** is provided by your Leancloud APP |
-|    `avatar`     | 123                                           |
-|  `placeholder`  | 123                                           |
-|    `visitor`    | 123                                           |
-|     `lang`      | 123                                           |
-|     `meta`      | 123                                           |
-|     `admin`     | 123                                           |
-| `recentComment` | To enable recent comment feature.             |
+|   Attributes    | Description                                                                             |
+| :-------------: | :-------------------------------------------------------------------------------------- |
+|    `enable`     | **true** to enable, **false** to disable.                                               |
+|    `app_id`     | Application `app_id` from Leancloud.                                                    |
+|    `app_key`    | Application `app_key` from Leancloud.                                                   |
+|    `avatar`     | See the [Avatar setting](https://valine.js.org/en/avatar.html) for more details.        |
+|  `placeholder`  | Comment box placeholders.                                                               |
+|    `visitor`    | Article reading statistics.                                                             |
+|     `lang`      | If you need a custom language, please refer to [i18n](https://valine.js.org/i18n.html). |
+|     `meta`      | Reviewer attributes. `['nick','mail','link']`                                           |
+|     `admin`     | Used to define which comment is posted by author of the blog.                           |
+| `recentComment` | To enable recent comment feature.                                                       |
 
-For more usage information, go to [Valine's]() documentation website.
+For more usage information, go to [Valine's](https://valine.js.org/) documentation website.

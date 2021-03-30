@@ -6,7 +6,7 @@ export const en: NavbarConfig = [
     link: '/guide/',
   },
   {
-    text: 'Buy me a Coffee',
+    text: '☕️ Buy me a Coffee',
     link: 'https://www.buymeacoffee.com/tridiamond',
   },
 ]

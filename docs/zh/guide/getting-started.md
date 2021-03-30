@@ -74,23 +74,3 @@ hexo clean & hexo g & hexo server
 ```
 
 当文件都生成完毕之后，就可以通过 [https://localhost:4000](https://localhost:4000) 访问你的博客了。
-
-- **步骤 5 (可选)**: 如果你需要替换默认的 CDN 地区，那么在修改了地区之后就需要重新打包这个主题。
-
-<CodeGroup>
-  <CodeGroupItem title="YARN">
-
-```shell:no-line-numbers
-yarn build
-```
-
-  </CodeGroupItem>
-
-  <CodeGroupItem title="NPM">
-
-```shell:no-line-numbers
-npm run build
-```
-
-  </CodeGroupItem>
-</CodeGroup>

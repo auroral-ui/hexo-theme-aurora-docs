@@ -6,7 +6,7 @@ export const zh: NavbarConfig = [
     link: '/zh/guide/',
   },
   {
-    text: '给我买杯咖啡',
+    text: '☕️ 给我买杯咖啡',
     link: 'https://afdian.net/@tridiamond',
   },
 ]

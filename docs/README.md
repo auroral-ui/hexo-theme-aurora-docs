@@ -16,7 +16,7 @@ features:
     details: Enjoy the lightning fast SPA built by vue3, UI is much more elegant and user friendly.
   - title: Performance
     details: With the boost performance by Vue3, whole blog's performance had being lifted.
-footer: MIT Licensed | Copyright © 2020-present TriDiamond
+footer: MIT Licensed | Copyright © 2020-present Auroral UI
 ---
 
 ![](https://img-blog.csdnimg.cn/202103280030531.png)
@@ -24,14 +24,15 @@ footer: MIT Licensed | Copyright © 2020-present TriDiamond
 ---
 
 <p align="center">
+  <img src="https://img.shields.io/github/stars/auroral-ui/hexo-theme-aurora">
+  <img src="https://img.shields.io/github/forks/auroral-ui/hexo-theme-aurora">
   <img src="https://img.shields.io/github/v/release/auroral-ui/hexo-theme-aurora">
   <img src="https://img.shields.io/github/release-date/auroral-ui/hexo-theme-aurora">
+  <img src="https://img.shields.io/github/issues/auroral-ui/hexo-theme-aurora">
   <img src="https://img.shields.io/github/license/auroral-ui/hexo-theme-aurora">
-  <a href="https://app.netlify.com/sites/tridiamond/deploys">
-  <img src="https://api.netlify.com/api/v1/badges/5faa571c-5a72-4882-ac3e-4b6942ecbb87/deploy-status"></a>
 </p>
 
-Main design concept of the theme is base on the trending "Aurora UI". **Building the next generation User Interface designs.**
+**Aurora is a next generation theme using Aurora colours and UI elements. It give you the feel of smooth flow of colours and a futuristic feeling.**
 
 ## What's in Aurora?
 

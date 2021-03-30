@@ -16,7 +16,7 @@ features:
     details: 享受由 Vue3 建立的单页面应用（SPA）所带来的更优雅，更友好的用户体验。
   - title: 高性能
     details: 使用 Vue3 给整个博客主题带来了整体的性能提升。
-footer: MIT Licensed | Copyright © 2020-present TriDiamond
+footer: MIT Licensed | Copyright © 2020-present Auroral UI
 ---
 
 ![](https://img-blog.csdnimg.cn/202103280030531.png)
@@ -24,14 +24,15 @@ footer: MIT Licensed | Copyright © 2020-present TriDiamond
 ---
 
 <p align="center">
-  <img src="https://img.shields.io/github/v/release/Aurora/hexo-theme-Aurora">
-  <img src="https://img.shields.io/github/release-date/Aurora/hexo-theme-Aurora">
-  <img src="https://img.shields.io/github/license/Aurora/hexo-theme-Aurora">
-  <a href="https://app.netlify.com/sites/tridiamond/deploys">
-  <img src="https://api.netlify.com/api/v1/badges/5faa571c-5a72-4882-ac3e-4b6942ecbb87/deploy-status"></a>
+  <img src="https://img.shields.io/github/stars/auroral-ui/hexo-theme-aurora">
+  <img src="https://img.shields.io/github/forks/auroral-ui/hexo-theme-aurora">
+  <img src="https://img.shields.io/github/v/release/auroral-ui/hexo-theme-aurora">
+  <img src="https://img.shields.io/github/release-date/auroral-ui/hexo-theme-aurora">
+  <img src="https://img.shields.io/github/issues/auroral-ui/hexo-theme-aurora">
+  <img src="https://img.shields.io/github/license/auroral-ui/hexo-theme-aurora">
 </p>
 
-主题的主要设计理念是基于当下流行的“极光 UI”。**构建下一代用户界面设计**
+**Aurora 是使用极光颜色和 UI 元素的下一代主题。它给你平滑流畅的色彩和未来感**
 
 ## Aurora 有什么功能？
 
