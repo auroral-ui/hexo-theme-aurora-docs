@@ -28,7 +28,7 @@ author:
 
 **方法 2** - 为网站预配置作者列表，然后在文章“author”属性中使用预配置的作者键。
 
-- 首先你需要预先配置一个作者列表在主题配置文件，这是在 `themes/Aurora/\_config.yml`。
+- 首先你需要预先配置一个作者列表在主题配置文件，这是在 `_config.aurora.yml`。
 
 ```yaml:no-line-numbers
 authors:
@@ -86,6 +86,11 @@ author: author-1
 |      `language`       | 使用 `en ` 设置为英文，使用 `cn` 设置为中文.                                                                                                                                 |
 | `distractionFreeMode` | 与 Facebook 一样的专注模式，点击评论输入框时会让背景变暗。`true` 来开启 `false` 来关闭                                                                                       |
 |    `recentComment`    | 是否开启最近评论功能。                                                                                                                                                       |
+|        `proxy`        | GitHub 授权请求的反向代理                                                                                                                                                    |
+
+:::warning
+如果你在使用 Gitalk 的时候，出现 403 或者 422 这种报错的话，请根据[这里的教程](https://mjava.top/archive/33f09b03-a5a7-4d66-93d3-7063905f9b81/)，自己搭建一个反向代理服务，然后把你建立好的方向代理地址配置给 `proxy` 即可。
+:::
 
 更多的使用指南请查看 [Gitalk's](https://github.com/gitalk/gitalk/blob/master/readme-cn.md) 插件的官网。
 

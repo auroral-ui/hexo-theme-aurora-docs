@@ -19,100 +19,36 @@ site_meta:
   cdn: cn
 ```
 
-:::warning 注意
-因为这个主题是用 Vue 打包而成的静态网页，所以这个修改完成后，需要我们执行 `npm run build` 或者 `yarn build` 来重新打包静态网页代码。
-:::
+更改 `cdn` 属性后，您需要运行以下命令重新构建 Hexo 静态文件。
+
+```shell
+hexo cl && hexo g
+```
 
 ## 自定义 Meta
 
-动手能力强的同学，可能会去自己改动主题的代码，有些时候你们可能会需要在头部添加一些脚本引用或者其他 meta 信息。这部分就是教大家如何在这个主题中添加这些信息。
+在配置文件中，可以很轻易的把自定义 `Script` 或 `CSS` 链接添加到主题中。你只需使用“injectable”设置即可。
 
-为了支持 CDN 切换，这个主题有两个不同的静态 `index.html` 入口文件。如果你想添加自定义头部 meta 信息的话，就要找到对应的文件进行修改。
+`注入` 设置有两个选项，每个选项都可以设置多个 Script 和 CSS 链接。
 
-在 CDN 配置中，我们可以设置国际和国内的 CDN，所以我们就有两个对应的 `index.html` 文件，分别是：
+- `scripts` - 用于配置多个脚本链接
+- `css` -用于配置多个 css 链接
+
+例如，您希望添加 Live2D 小部件，以下是如何设置它的方法。这里我使用[stevenjoezhang/live2d-widget](https://github.com/stevenjoezhang/live2d-widget)。
+
+```yaml:no-line-numbers
+#! ---------------------------------------------------------------
+#! Injections
+#! ---------------------------------------------------------------
+injects:
+  scripts:
+    - <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+  css:
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+```
+
+然后重建 Hexo 静态文件:
 
 ```shell:no-line-numbers
-.
-└── public
-    ├── index.html # <- 只用于本地开发
-    ├── index_en.html # <- 当 CDN 设置为 'en' 时使用
-    └── index_cn.html # <- 当 CDN 设置为 'cn' 时使用
+hexo cl && hexo g
 ```
-
-比如，现在你想添加 `anime.css` 的样式链接，并且我们的 CDN 配置设置为 `cn` 时：
-
-```html{26-30}:no-line-numbers
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
-    <!-- Busuanzi site statistic generator -->
-    <script
-      async
-      src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
-    ></script>
-    <!-- Prismjs -->
-    <script src="https://cdn.bootcdn.net/ajax/libs/prism/1.22.0/prism.min.js"></script>
-    <script src="https://cdn.bootcdn.net/ajax/libs/prism/1.22.0/components/prism-bash.min.js"></script>
-    <script src="https://cdn.bootcdn.net/ajax/libs/prism/1.22.0/components/prism-javascript.min.js"></script>
-    <script src="https://cdn.bootcdn.net/ajax/libs/prism/1.22.0/components/prism-java.min.js"></script>
-    <script src="https://cdn.bootcdn.net/ajax/libs/prism/1.22.0/components/prism-liquid.min.js"></script>
-    <script src="https://cdn.bootcdn.net/ajax/libs/prism/1.22.0/components/prism-markdown.min.js"></script>
-    <script src="https://cdn.bootcdn.net/ajax/libs/prism/1.22.0/components/prism-markup-templating.min.js"></script>
-    <script src="https://cdn.bootcdn.net/ajax/libs/prism/1.22.0/components/prism-css.min.js"></script>
-    <script src="https://cdn.bootcdn.net/ajax/libs/prism/1.22.0/components/prism-scss.min.js"></script>
-    <script src="https://cdn.bootcdn.net/ajax/libs/prism/1.22.0/components/prism-php.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.bootcdn.net/ajax/libs/prism/1.22.0/themes/prism.min.css"
-    />
-    <!-- Animate CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/anime.css@1.0.1/anime.min.css"
-    />
-    <!-- Google rubik fonts -->
-    <style>
-      /* rubik-regular */
-      @font-face {
-        font-family: 'Rubik';
-        font-style: normal;
-        font-weight: 400;
-        src: url('//lib.baomitu.com/fonts/rubik/rubik-regular.eot'); /* IE9 Compat Modes */
-        src: local('Rubik'), local('Rubik-Normal'),
-          url('//lib.baomitu.com/fonts/rubik/rubik-regular.eot?#iefix')
-            format('embedded-opentype'),
-          /* IE6-IE8 */ url('//lib.baomitu.com/fonts/rubik/rubik-regular.woff2')
-            format('woff2'),
-          /* Super Modern Browsers */
-            url('//lib.baomitu.com/fonts/rubik/rubik-regular.woff')
-            format('woff'),
-          /* Modern Browsers */
-            url('//lib.baomitu.com/fonts/rubik/rubik-regular.ttf')
-            format('truetype'),
-          /* Safari, Android, iOS */
-            url('//lib.baomitu.com/fonts/rubik/rubik-regular.svg#Rubik')
-            format('svg'); /* Legacy iOS */
-      }
-    </style>
-  </head>
-  <body>
-    <noscript>
-      <strong>
-        We're sorry but <%= webpackConfig.name %> doesn't work properly without
-        JavaScript enabled. Please enable it to continue.
-      </strong>
-    </noscript>
-    <div id="app"></div>
-    <div id="modal-container"></div>
-    <!-- built files will be auto injected -->
-  </body>
-</html>
-```
-
-:::warning 注意
-因为这个主题是用 Vue 打包而成的静态网页，所以这个修改完成后，需要我们执行 `npm run build` 或者 `yarn build` 来**重新打包静态网页代码**。
-:::

@@ -21,6 +21,16 @@ theme:
   dark_mode: true
 ```
 
+## Profile Avatar
+
+You can also custom the shape of the profile avatar by changing the `profile_shape` property in the configuration.
+
+This property has the following options:
+
+|                                                     `circle`                                                     |                                                    `diamond`                                                    |                                                    `rounded`                                                    |
+| :--------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------: |
+| <img src="https://raw.githubusercontent.com/TriDiamond/image-storage/main/img/20210403203336.png" height="200"/> | <img src="https://raw.githubusercontent.com/TriDiamond/image-storage/main/img/20210403203513.png" height="200"> | <img src="https://raw.githubusercontent.com/TriDiamond/image-storage/main/img/20210403203142.png" height="200"> |
+
 ## Gradient Colour
 
 A gradient is used across the theme, which consist of 3 main colours. These 3 colours can be configured in the theme option like so:

@@ -19,6 +19,16 @@ theme:
   dark_mode: true
 ```
 
+## 头像形状
+
+你也可以通过改变配置中的 `profile_shape` 属性来自定义头像的形状。
+
+此属性有以下选项:
+
+|                                                     `circle`                                                     |                                                    `diamond`                                                    |                                                    `rounded`                                                    |
+| :--------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------: |
+| <img src="https://raw.githubusercontent.com/TriDiamond/image-storage/main/img/20210403203336.png" height="200"/> | <img src="https://raw.githubusercontent.com/TriDiamond/image-storage/main/img/20210403203513.png" height="200"> | <img src="https://raw.githubusercontent.com/TriDiamond/image-storage/main/img/20210403203142.png" height="200"> |
+
 ## 渐变颜色
 
 主题中多处使用了一个渐变颜色，这个渐变颜色一共由 3 个颜色组成。这 3 个颜色可以在主题配置里面设置。

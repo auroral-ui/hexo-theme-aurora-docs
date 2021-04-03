@@ -4,19 +4,14 @@
 
 There are two different configuration files, one is for **Hexo itself** and one for **the theme**.
 
-- [Hexo configuration](https://hexo.io/docs/configuration.html) file is in the **root of Hexo project folder**
-- Hexo theme configuration file is in the **root of the theme folder**
-
-```shell:no-line-numbers{2,5}
+```shell:no-line-numbers
 . # Hexo project root.
 ├─ _config.yml # Hexo config file.
-└─ themes
-   └─ aurora # theme folder.
-      └─ _config.yml # theme config file.
+└─ _config.aurora.yml # Theme config file.
 ```
 
-:::tip
-Most feature of the theme is configured using the theme config, except for those that require Hexo plugin's support.
+:::warning
+Most feature of the theme is configured using the theme config file, except for those that require Hexo plugin's support.
 :::
 
 ## Site Configs
@@ -35,13 +30,24 @@ The `site` config has the following options:
 | `multi_language` |  true, false   | Enabling the blog to have multi-language switching ability.                                              |
 |      `logo`      |     String     | Link to your logo image.                                                                                 |
 |     `avatar`     |     String     | Link to your avatar image.                                                                               |
-|     `beian`      |     String     | China website BeiAn information.                                                                         |
+|     `beian`      |     Object     | China website BeiAn information. (Since version 1.1.0, this had changed to have 2 properties.)           |
+
+### Beian Options
+
+| Options  | Accepted Types | Usages        |
+| :------: | :------------: | ------------- |
+| `number` |     String     | Beian number. |
+|  `link`  |     String     | Beian link.   |
+
+---
 
 :::tip
 If you did not set an `avatar` url, the logo's url will be used instead.
 :::
 
-Site config demo:
+---
+
+## Config Example
 
 ```yaml:no-line-numbers
 # Site Config
@@ -54,5 +60,7 @@ site:
   multi_language: true
   logo: https://image-website.com/path-to-image.jpg
   avatar: https://image-website.com/path-to-image.jpg
-  beian: ''
+  beian: # Can leave number and link blank if you don't need this.
+    number: 123920139
+    link: 'https://link-to-beian.com'
 ```

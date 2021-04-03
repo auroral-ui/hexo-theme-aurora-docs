@@ -1,6 +1,6 @@
 # 菜单
 
-Aurora 主题的**菜单**是可以自主定义的，只需要通过在主题的 `_config.yaml` 中配置即可。
+Aurora 主题的**菜单**是可以自主定义的，只需要通过在主题的 `_config.aurora.yaml` 中配置即可。
 
 ## 默认菜单
 
@@ -10,6 +10,7 @@ Aurora 拥有 3 个自带样式的页面，分别是**关于页**、**标签页*
 
 ```yaml{2-3}:no-line-numbers
 menu:
+  About: false
   Tags: true
   Archives: true
 ```
@@ -70,55 +71,22 @@ menu:
 
 ## I18n 菜单
 
-这个主题是支持 I18n 多语言的，所以我们的菜单也是支持多语言设置的。要博客根据博客的当前区域（locale）切换语言，就需要使用菜单中的 `i18n` 属性。
+由于主题支持 I18n 多语言，所以菜单名也支持多语言设置。目前主题支持菜单的英文和中文翻译。(_在不久的将来会支持更多。_)
 
-假如现在我们有一个菜单叫 `联系我`，同时我们想这个菜单可以支持英语和中文。这个时候我们就需要在给它一个 i18n 的名字。首先我们可以在 menu 配置中设置这个导航：
+要为菜单设置多语言，我们只需要配置 `i18n` 属性，而这个属性有**2 个选项**:
 
-```yaml{7}:no-line-numbers
+- `cn` - 中文翻译
+- `en` - 英文翻译
+
+```yaml{7-9}:no-line-numbers
 menu:
   Tags: true
   Archives: true
-  # Multi-language Contact menu
+  # 多语言菜单
   contact:
     name: 'Contact'
-    i18n: 'contact'
+    i18n:
+      cn: '联系我'
+      en: 'Contact'
     path: 'http://domain.com/contact'
-```
-
-然后我们在 `src/locales/language/en.json` (英文) 和 `src/locales/language/cn.json` (中)，这两个配置文件里面分别设置 contact 的英文和中文名字。
-
-因为我们在配置的是 `menu` 菜单的 i18n，所以我们需要在 menu 中添加 `contact` 这个参数。
-
-```json{12}:no-line-numbers
-// 英文
-// src/locales/language/en.json
-{
-  "menu": {
-    "home": "Home",
-    "about": "About",
-    "archives": "Archives",
-    "categories": "Categories",
-    "tags": "Tags",
-    "post": "Article",
-    "not-found": "Page not found",
-    "contact": "Contact Me"
-  }
-}
-```
-
-```json{12}:no-line-numbers
-// 中文
-// src/locales/language/cn.json
-{
-  "menu": {
-    "home": "Home",
-    "about": "About",
-    "archives": "Archives",
-    "categories": "Categories",
-    "tags": "Tags",
-    "post": "Article",
-    "not-found": "Page not found",
-    "contact": "联系我"
-  }
-}
 ```

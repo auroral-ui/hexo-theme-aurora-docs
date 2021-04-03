@@ -12,7 +12,7 @@
 |    `twitter`    | Twitter 个人页链接.       |
 | `stackoverflow` | Stackoverflow 个人页链接. |
 |     `weibo`     | 微博个人页链接.           |
-|     `zhifu`     | 知乎简介页链接.           |
+|     `zhihu`     | 知乎简介页链接.           |
 |     `csdn`      | CSDN 简介页链接.          |
 |    `juejin`     | 掘金简介页链接.           |
 
@@ -24,7 +24,7 @@ socials:
   twitter: ''
   stackoverflow: ''
   weibo: 'https://weibo.com/u/7318914058'
-  zhifu: 'https://www.zhihu.com/people/tridiamond'
+  zhihu: 'https://www.zhihu.com/people/tridiamond'
   csdn: 'https://blog.csdn.net/TriDiamond6'
   juejin: 'https://juejin.cn/user/1873223546578589'
 ```

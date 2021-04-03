@@ -1,6 +1,6 @@
 # Menu
 
-The **menus** in ObsidianNext theme can be highly customized in the theme `_config.yml` file.
+The **menus** in Aurora theme can be highly customized in the theme `_config.aurora.yml` file.
 
 ## Default Menus
 
@@ -10,6 +10,7 @@ Aurora is packed with three styled pages, **about** page, **tags** page and **ar
 
 ```yaml{2-3}:no-line-numbers
 menu:
+  About: false
   Tags: true
   Archives: true
 ```
@@ -70,39 +71,26 @@ Internal links can be added with a custom page. Please refer to the [Page](/guid
 
 ## I18n Menu
 
-Since the theme has I18n multi-language support, therefore the menu name also support multi-language setup.
+Since the theme has I18n multi-language support, therefore the menu name also support multi-language setup. So far the theme support English and Chinese translations for the menu. (_Will support more in the near future._)
 
-To allow our menu change base on our blog's current locale, we need to give our menu a I18n corresponding name.
+To setup multi-language for the menu, all we have to do is configure the `i18n` property.
 
-If you have an I18n menu called `Contact Me` and it's i18n name is `contact`. You will need to configure your menu config like this:
+This property has **2 options**:
 
-```yaml{7}:no-line-numbers
+- `cn` - for Chinese
+- `en` - for English
+
+For example you want to add a menu call `contact`, this is how to want to configure it.
+
+```yaml{7-9}:no-line-numbers
 menu:
   Tags: true
   Archives: true
   # Multi-language Contact menu
   contact:
     name: 'Contact'
-    i18n: 'contact'
+    i18n:
+      cn: '联系我'
+      en: 'Contact'
     path: 'http://domain.com/contact'
-```
-
-The `i18n` attribute is used to set the i18n name configured in `src/locales/language/en.json` (English) or `src/locales/language/cn.json` (Chinese).
-
-Since this I18n name is for the menu, therefore you need to add this name inside `menu`.
-
-```json{11}:no-line-numbers
-// src/locales/language/en.json
-{
-  "menu": {
-    "home": "Home",
-    "about": "About",
-    "archives": "Archives",
-    "categories": "Categories",
-    "tags": "Tags",
-    "post": "Article",
-    "not-found": "Page not found",
-    "contact": "Contact Me"
-  }
-}
 ```

@@ -27,9 +27,9 @@ If you see this, that means your page had successfully created.
 
 You need to **configure the menu config** to include it in the navigation.
 
-Open the theme configuration file at `themes/Aurora/_config.yml`, and config the page like so:
+Open the theme configuration file at `_config.aurora.yml`, and config the page like so:
 
-```yaml{6-9}:no-line-numbers
+```yaml{6-11}:no-line-numbers
 menu:
   About: true
   Tags: true
@@ -37,17 +37,19 @@ menu:
   # Custom menus
   message-board:
     name: 'MessageBoard'
-    i18n: 'message-board'
+    i18n:
+      cn: '留言板'
+      en: 'Message Board'
     path: '/page/message-board'
 ```
 
 First you need to set the following attributes:
 
-| Attributes | Description                                                                                                                                      |
-| :--------: | :----------------------------------------------------------------------------------------------------------------------------------------------- |
-|   `name`   | Name of the menu for this page. If `i18n` is not set, this will be used as the name of the navigation. Else `i18n` will be used instead.         |
-|   `i18n`   | i18n can be set in the two language files in `themes/Aurora/src/locales/languages`, setting this value will make the menu change base on locale. |
-|   `path`   | For custom page, here you need to use the template like this `/page/[page-folder-name]`                                                          |
+| Attributes | Description                                                                                |
+| :--------: | :----------------------------------------------------------------------------------------- |
+|   `name`   | Name of the menu for this page. (Used identify this route, make sure it's unique.)         |
+|   `i18n`   | i18n menu option, check out [i18n menu](/guide/menu.html#i18n-menu) for more usage detail. |
+|   `path`   | For custom page, here you need to use the template like this `/page/[page-folder-name]`    |
 
 :::tip
 If you have multiple pages, you want to group the page into a sub-navigation. Then you can config it like this.

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=Pacifico&family=Rubik&family=Ubuntu+Mono&display=swap');
+
 :root {
   scroll-behavior: smooth;
   --main-gradient: linear-gradient(
@@ -85,6 +87,7 @@
 
 body,
 html {
+  font-family: 'Rubik', 'Noto Sans SC', sans-serif;
   background-color: var(--background-primary);
 }
 
@@ -437,12 +440,18 @@ div[class*='language-'] {
   position: relative;
   background-color: var(--background-secondary);
   border-radius: 6px;
+  code,
+  pre {
+    font-family: 'Ubuntu Mono', monospace !important;
+    font-size: 1rem;
+  }
 }
 
 div[class*='language-'].line-numbers-mode
   .highlight-lines
   .highlight-line::before {
   background-color: #151516;
+  border-left: 3px solid var(--bg-accent-55);
 }
 
 div[class*='language-'].line-numbers-mode::after {
@@ -450,7 +459,18 @@ div[class*='language-'].line-numbers-mode::after {
 }
 
 div[class*='language-'] .highlight-lines .highlight-line {
+  position: relative;
   background-color: var(--background-secondary-alt);
+  &:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 4px;
+    background: var(--text-accent);
+    opacity: 0.5;
+  }
 }
 
 .code-group__nav {

@@ -28,7 +28,7 @@ author:
 
 **Method 2** - Pre-configure a list of authors for the site, then use the pre-configured author key in the article `author` attribute.
 
-- First you need to pre-configure a list of authors in the theme config file, which is at `themes/Aurora/_config.yml`.
+- First you need to pre-configure a list of authors in the theme config file, which is at `_config.aurora.yml`.
 
 ```yaml:no-line-numbers
 authors:
@@ -86,6 +86,7 @@ Config attributes:
 |      `language`       | Can be `en ` for English or `cn` for Chinese.                                                                                                                                                                                   |
 | `distractionFreeMode` | Facebook-like distraction, `true` to turn on, `false` to turn off.                                                                                                                                                              |
 |    `recentComment`    | To enable recent comment feature.                                                                                                                                                                                               |
+|        `proxy`        | GitHub oauth request reverse proxy for CORS.                                                                                                                                                                                    |
 
 For more usage information, go to [Gitalk's](https://github.com/gitalk/gitalk) repo.
 

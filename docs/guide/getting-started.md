@@ -2,38 +2,26 @@
 
 ## Prerequisites
 
-- [Hexo 4.x](https://hexo.io/)
-- `yarn` or `npm` installed
+- [Hexo 5.4+](https://hexo.io/)
+- [Yarn](https://classic.yarnpkg.com/en/) or [NPM](https://docs.npmjs.com/getting-started) installed
+
+---
 
 ## Installation
 
 This section will help you install the theme on an existing Hexo Blog project.
 
-- **Step 1**: In your console, go to the root directory of your Hexo project, then go into the `themes/` folder.
+> Since version 1.1.0, the theme can be simply installed using `NPM` or `Yarn`, makes it much easier for theme users to install!
 
-```shell:no-line-numbers
-cd themes
-```
+---
 
-- **Step 2**: Clone `Aurora` theme into `aurora/` folder.
-
-```shell:no-line-numbers
-git clone https://github.com/aurora-ui/hexo-theme-aurora.git aurora
-```
-
-- **Step 3**: Go into `aurora/` theme folder.
-
-```shell:no-line-numbers
-cd aurora
-```
-
-- **Step 4**: Installing all the dependencies needed for the theme. This requires you to have either [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) or [yarn](https://yarnpkg.com/getting-started/install) installed in your system.
+- **Step 1**: In your console, go to the root directory of your Hexo project, then run the following command to install the theme:
 
 <CodeGroup>
   <CodeGroupItem title="YARN">
 
 ```shell:no-line-numbers
-yarn install
+yarn add hexo-theme-aurora
 ```
 
   </CodeGroupItem>
@@ -41,16 +29,33 @@ yarn install
   <CodeGroupItem title="NPM">
 
 ```shell:no-line-numbers
-npm install
+npm install hexo-theme-aurora --save
 ```
 
   </CodeGroupItem>
 </CodeGroup>
 
-- **Step 5**: Due to the use of Vue-router, the default Hexo generated pages and posts' permalink will cause the Vue router failing to find the route, therefore you need to change the Hexo default permalink configuration.
+---
 
-  - **Step 5.1**: Open the `_config.yml` in your hexo root direction.
-  - **Setp 5.2**: Change `permalink` to `/post/:title.html`
+- **Step 2**: Config file `_config.yml` now need to be added in the root folder of your Hexo blog. You simply create a `_config.aurora.yml` to change the theme.
+
+:::tip
+
+- To get a default theme template, simply run the following command
+- But this command is for linux OS only, for Windows users you can copy it yourself from node_modules folder.
+
+:::
+
+```shell:no-line-numbers
+cp -rf ./node_modules/hexo-theme-aurora/_config.yml ./_config.aurora.yml
+```
+
+---
+
+- **Step 3**: Due to the use of Vue-router, the default Hexo generated pages and posts' permalink will cause the Vue router fail to find the route, therefore you need to change the Hexo default permalink configuration.
+
+  - **Step 3.1**: Open the `_config.yml` in your hexo root direction.
+  - **Step 3.2**: Change `permalink` to `/post/:title.html`
 
 ```yaml:no-line-numbers{4}
 # URL
@@ -63,34 +68,37 @@ pretty_urls:
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
 ```
 
-- **Step 6**: To run the local server and check out your blog, simply run the following command.
+---
 
-:::tip
-All file changes will force a static file update, however since the application is a SPA and all the data are fetched through APIs, therefore you will need to refresh the page to see the effect.
-:::
+- **Step 4** Last but not least, the theme use `Prismjs` for code highlighting, but Hexo default uses `highlightjs`, therefore you will need to change the Hexo config to use Prismjs instead:
+
+> All you have to do is change highlight's enable to `false` and change prismjs's enable to `true`
+
+```yaml:no-line-numbers{2,9}
+highlight:
+  enable: false
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  enable: true
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+```
+
+---
+
+- **Step 5**: To run the local server and check out your blog, simply run the following command.
 
 ```shell:no-line-numbers
 hexo clean & hexo g & hexo server
 ```
 
-After all the files finish generating, you will be able to visit your blog through [https://localhost:4000](https://localhost:4000).
+:::tip
+All file changes will force a static file update, however since the application is a SPA and all the data are fetched through APIs, therefore you will need to refresh the page to see the effect.
+:::
 
-- **Step 5 (Optional)**: If you are changing the default `CDN` locale of the application, you will need to rebuild the application by running the following command.
-
-<CodeGroup>
-  <CodeGroupItem title="YARN">
-
-```shell:no-line-numbers
-yarn build
-```
-
-  </CodeGroupItem>
-
-  <CodeGroupItem title="NPM">
-
-```shell:no-line-numbers
-npm run build
-```
-
-  </CodeGroupItem>
-</CodeGroup>
+After all the files finish generating, you will be able to visit your blog on [https://localhost:4000](https://localhost:4000).
