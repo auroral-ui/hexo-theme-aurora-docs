@@ -6,7 +6,13 @@
 
 ## 多个作者
 
-这插件支持为每一篇文章设置一个作者。给一篇文章设置作者有两种方法。
+这个插件用来支持`多作者`，这个特性是为多个作者的博客或社区设计的。
+
+这个概念是这样的，作为默认的作者，没有必要在每个帖子的 markdown 文件中反复配置作者。因此，在 [site configure](/zh/guide/configuration.html#site-configs) 中，有一个 author 属性用来设置默认的博客作者。一旦设置了这个值，你所有的文章都会继承默认的作者，除非在文章中重新定义。
+
+为每篇文章设置不同的作者有两种方法：
+
+> 从版本 [`v1.2.x`](https://github.com/auroral-ui/hexo-theme-aurora/releases/tag/v1.2.0) 开始，`author` 支持更多的属性。
 
 **方法 1** - 在文章的 markdown 文件的**Front-Meta**中配置 author 属性。
 
@@ -20,11 +26,16 @@ categories:
   - Cate
 cover: https://cover.png
 author:
-  name: Tom
+  name: TriDiamond
   link: https://tridiamond.tech
   avatar: https://avatar.png
+  description: 'Think like an artist, code like an artisan.'
+  socials:
+    github: https://github.com/tridiamond
 ---
 ```
+
+---
 
 **方法 2** - 为网站预配置作者列表，然后在文章“author”属性中使用预配置的作者键。
 
@@ -33,13 +44,19 @@ author:
 ```yaml:no-line-numbers
 authors:
   author-1:
-    name: Tom
-    avatar: https://Tom.png
-    link: https://github.com/TriDiamond
+    name: TriDiamond
+    link: https://tridiamond.tech
+    avatar: https://avatar.png
+    description: 'Think like an artist, code like an artisan.'
+    socials:
+      github: https://github.com/tridiamond
   author-2:
     name: Jerry
     avatar: https://Jerry.png
     link: https://github.com/TriDiamond
+    description: 'I am Jerry, how are you?'
+    socials:
+      github: https://github.com/Jerry
 ```
 
 - 然后你可以在文章的**Front-Meta**中使用 `author` 的 key 来设置作者。

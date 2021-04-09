@@ -6,7 +6,13 @@ This theme supports a couple of different plugins. Each plugin will provide adva
 
 ## Multiple Authors
 
-This support different author for each article. There are two ways to setup authors for an article.
+This plugin supports multi-author, this feature is designed for multi-author blogs or communities.
+
+The concept is like this, as the default author, there is no need to write the author over and over in every post's markdown file. Therefore, in the [site configure](/guide/configuration.html#site-configs), there is an author property to set the default blog author. Once that is set, all your posts will inherit the default author, unless specified.
+
+To setup different author for each article. There are two ways to setup authors for an article.
+
+> Since [`v1.2.x`](https://github.com/auroral-ui/hexo-theme-aurora/releases/tag/v1.2.0) author supports more properties.
 
 **Method 1** - Configure the `author` attribute in the **Front-Meta** in the article's markdown file.
 
@@ -20,26 +26,37 @@ categories:
   - Cate
 cover: https://cover.png
 author:
-  name: Tom
+  name: TriDiamond
   link: https://tridiamond.tech
   avatar: https://avatar.png
+  description: 'Think like an artist, code like an artisan.'
+  socials:
+    github: https://github.com/tridiamond
 ---
 ```
 
-**Method 2** - Pre-configure a list of authors for the site, then use the pre-configured author key in the article `author` attribute.
+---
+
+**Method 2** - Pre-configure a list of authors for the blog, then use the pre-configured `author key` in the article `author` property.
 
 - First you need to pre-configure a list of authors in the theme config file, which is at `_config.aurora.yml`.
 
 ```yaml:no-line-numbers
 authors:
   author-1:
-    name: Tom
-    avatar: https://Tom.png
-    link: https://github.com/TriDiamond
+    name: TriDiamond
+    link: https://tridiamond.tech
+    avatar: https://avatar.png
+    description: 'Think like an artist, code like an artisan.'
+    socials:
+      github: https://github.com/tridiamond
   author-2:
     name: Jerry
     avatar: https://Jerry.png
     link: https://github.com/TriDiamond
+    description: 'I am Jerry, how are you?'
+    socials:
+      github: https://github.com/Jerry
 ```
 
 - Then you can use the author `keys` in the theme config to set the author in the article **Front-Meta**.
@@ -58,7 +75,7 @@ author: author-1
 ```
 
 :::tip
-If no `author` attribute is set for an post, the default author of the blog will be used as the author of the post.
+If no `author` attribute is set for an post, the default author of the blog will be used.
 :::
 
 ## Comments
