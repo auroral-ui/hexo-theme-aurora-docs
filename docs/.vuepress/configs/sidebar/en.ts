@@ -15,6 +15,7 @@ export const en: SidebarConfig = {
         '/guide/site-meta.md',
         '/guide/page.md',
         '/guide/plugins.md',
+        '/guide/router.md',
       ],
     },
   ],
