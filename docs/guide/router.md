@@ -4,7 +4,7 @@ This part of the document is for configuring the router of the theme.
 
 ## Host theme on Subfolder
 
-> This feature is added since `v1.2.2`
+> This feature is added since `v1.3.0`
 
 For certain theme users, they need to host their blog on a subfolder. For example blog is hosted on `https://tridiamond.github.io/blog`.
 

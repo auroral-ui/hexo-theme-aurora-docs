@@ -31,7 +31,7 @@ socials:
 
 ## Custom Social Links
 
-> Added since version `1.2.2`
+> Added since version `1.3.0`
 
 Apart from the default social links, you can also add more social links to the theme.
 
