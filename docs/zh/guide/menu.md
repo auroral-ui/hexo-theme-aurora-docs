@@ -35,6 +35,18 @@ menu:
     path: 'https://github.com/Aurora/hexo-theme-Aurora'
 ```
 
+自从版本 `v1.4.3`，外部链接也支持 `mailto` 链接。 这将把您的用户带到他们的电子邮件页面发送电子邮件。
+
+```yaml{4-7}:no-line-numbers
+menu:
+  Tags: true
+  Archives: true
+  # External link for a github repo
+  Email:
+    name: 'Mail Me'
+    path: 'mailto:code.tridiamond@gmail.com'
+```
+
 ### 多级菜单
 
 有时候我们还可能想分组一些链接，把一些链接放到二级导航里面。没问题，Aurora 的菜单系统也是支持多级菜单的。要创建一个多级菜单，我们只需要在 menu 的链接中添加一个 `children` 属性即可。

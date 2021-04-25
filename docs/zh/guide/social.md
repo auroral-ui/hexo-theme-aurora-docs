@@ -31,29 +31,42 @@ socials:
 
 ## 自定义社交链接
 
-> 版本 `1.3.0` 后加入的功能
+> - 版本 `1.3.0` 后加入的功能
+> - 版本 `1.4.3` 修改了这个配置方式
 
 除了默认的社交链接，你还可以添加更多的社交链接到主题。
 
 **自定义社交链接配置**模板是这样配置的：
 
-```yaml:no-line-numbers
-custom_socials:
-  #! Example:
-  #! --- Using SVG
-  bilibili:
-    icon: /svg/bilibili.svg
-    link: https://live.bilibili.com/22619211
+:::tip
+自从版本 `1.4.3` 自定义社交链接集成到默认的社交配置。 **使用`custom`属性设置您的自定义社交链接**
+:::
 
-  #! --- Using IconFont
-  baidu:
-    icon: iconfont icon-baidu
-    link: https://live.bilibili.com/22619211
+```yaml:no-line-numbers{9-24}
+socials:
+  github: 'https://github.com/TriDiamond'
+  twitter: ''
+  stackoverflow: ''
+  weibo: 'https://weibo.com/u/7318914058'
+  zhihu: 'https://www.zhihu.com/people/tridiamond'
+  csdn: 'https://blog.csdn.net/TriDiamond6'
+  juejin: 'https://juejin.cn/user/1873223546578589'
+  customs:
+    #! Example:
+    #! --- Using SVG
+    bilibili:
+      icon: /svg/bilibili.svg
+      link: https://live.bilibili.com/22619211
 
-  #! --- Using FontAwesome
-  book:
-    icon: far fa-address-book
-    link: https://live.bilibili.com/22619211
+    #! --- Using IconFont
+    baidu:
+      icon: iconfont icon-baidu
+      link: https://live.bilibili.com/22619211
+
+    #! --- Using FontAwesome
+    book:
+      icon: far fa-address-book
+      link: https://live.bilibili.com/22619211
 ```
 
 自定义社交链接支持使用 `SVG`、 `iconfont`、 `jpg` 和 `png`。

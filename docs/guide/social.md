@@ -31,29 +31,42 @@ socials:
 
 ## Custom Social Links
 
-> Added since version `1.3.0`
+> - Added since version `1.3.0`
+> - Changed since version `1.4.3`
 
 Apart from the default social links, you can also add more social links to the theme.
 
 **Custom Social Links configuration** template looks like this:
 
-```yaml:no-line-numbers
-custom_socials:
-  #! Example:
-  #! --- Using SVG
-  bilibili:
-    icon: /svg/bilibili.svg
-    link: https://live.bilibili.com/22619211
+:::tip
+Since version `1.4.3` custom social links are integrated into the default social configuration. **Use the `customs` property to set your custom social links.**
+:::
 
-  #! --- Using IconFont
-  baidu:
-    icon: iconfont icon-baidu
-    link: https://live.bilibili.com/22619211
+```yaml:no-line-numbers{9-24}
+socials:
+  github: 'https://github.com/TriDiamond'
+  twitter: ''
+  stackoverflow: ''
+  weibo: 'https://weibo.com/u/7318914058'
+  zhihu: 'https://www.zhihu.com/people/tridiamond'
+  csdn: 'https://blog.csdn.net/TriDiamond6'
+  juejin: 'https://juejin.cn/user/1873223546578589'
+  customs:
+    #! Example:
+    #! --- Using SVG
+    bilibili:
+      icon: /svg/bilibili.svg
+      link: https://live.bilibili.com/22619211
 
-  #! --- Using FontAwesome
-  book:
-    icon: far fa-address-book
-    link: https://live.bilibili.com/22619211
+    #! --- Using IconFont
+    baidu:
+      icon: iconfont icon-baidu
+      link: https://live.bilibili.com/22619211
+
+    #! --- Using FontAwesome
+    book:
+      icon: far fa-address-book
+      link: https://live.bilibili.com/22619211
 ```
 
 Custom social links support use of `SVG`, `iconfont`, `jpg` and `png`.

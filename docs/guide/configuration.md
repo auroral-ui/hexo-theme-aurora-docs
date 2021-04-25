@@ -32,6 +32,12 @@ The `site` config has the following options:
 |     `avatar`     |     String     | Link to your avatar image.                                                                               |
 |     `beian`      |     Object     | China website BeiAn information. (Since version 1.1.0, this had changed to have 2 properties.)           |
 
+:::tip
+If you did not set an `avatar` url, the logo's url will be used instead.
+:::
+
+---
+
 ### Beian Options
 
 | Options  | Accepted Types | Usages        |
@@ -41,9 +47,12 @@ The `site` config has the following options:
 
 ---
 
-:::tip
-If you did not set an `avatar` url, the logo's url will be used instead.
-:::
+### Police Beian Options
+
+| Options  | Accepted Types | Usages        |
+| :------: | :------------: | ------------- |
+| `number` |     String     | Beian number. |
+|  `link`  |     String     | Beian link.   |
 
 ---
 
@@ -61,8 +70,11 @@ site:
   logo: https://image-website.com/path-to-image.jpg
   avatar: https://image-website.com/path-to-image.jpg
   beian: # Can leave number and link blank if you don't need this.
-    number: 123920139
+    number: "123123123123"
     link: 'https://link-to-beian.com'
+  police_beian:
+    number: "123123123123"
+    link: 'https://link-to-police-beian.com'
 ```
 
 ## Feature Article

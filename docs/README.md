@@ -49,6 +49,11 @@ Keep me working on this project 💙
     <a href="https://github.com/MozLee" style="font-size: 1.2rem;">MozLee</a>
     <b>¥ 99.99</b>
   </li>
+  <li style="display: flex; flex-direction: column; align-items: center;  margin-right: 20px; border-radius: 9999px">
+    <img src=" https://q4.qlogo.cn/g?b=qq&nk=1349703146&s=100" height="50" width="50">
+    <a href="https://gitee.com/appleaday" style="font-size: 1.2rem;">=鱼</a>
+    <b>¥ 99.00</b>
+  </li>
 </ul>
 
 ## What's in Aurora?

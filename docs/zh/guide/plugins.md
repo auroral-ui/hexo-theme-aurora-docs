@@ -12,7 +12,12 @@
 
 为每篇文章设置不同的作者有两种方法：
 
-> 从版本 [`v1.2.x`](https://github.com/auroral-ui/hexo-theme-aurora/releases/tag/v1.2.0) 开始，`author` 支持更多的属性。
+> - 从版本 [`v1.2.x`](https://github.com/auroral-ui/hexo-theme-aurora/releases/tag/v1.2.0) 开始，`author` 支持更多的属性。
+> - 版本 `v1.4.3` 多作者支持配置**自定义媒体链接**。
+
+:::tip
+多作者支持自定义媒体链接，在 `author` 的 `socials` 属性里面支持配置 `customs` 配置，自定义媒体链接配置请参考[媒体链接部分的文档](zh/guide/social.html#自定义社交链接)。
+:::
 
 **方法 1** - 在文章的 markdown 文件的**Front-Meta**中配置 author 属性。
 

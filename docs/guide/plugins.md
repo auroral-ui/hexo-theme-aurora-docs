@@ -12,7 +12,12 @@ The concept is like this, as the default author, there is no need to write the a
 
 To setup different author for each article. There are two ways to setup authors for an article.
 
-> Since [`v1.2.x`](https://github.com/auroral-ui/hexo-theme-aurora/releases/tag/v1.2.0) author supports more properties.
+> - Since [`v1.2.x`](https://github.com/auroral-ui/hexo-theme-aurora/releases/tag/v1.2.0) author supports more properties.
+> - Since `v1.4.3` multi-author also supports**custom social links**.
+
+:::tip
+Multi-author also supports **custom social links**，inside `author`'s `socials` property you can add a `customs` configuration. For full documentation on how to setup `custom` property, please refer to the [custom social link](/guide/social.html#custom-social-links) part of the document.
+:::
 
 **Method 1** - Configure the `author` attribute in the **Front-Meta** in the article's markdown file.
 

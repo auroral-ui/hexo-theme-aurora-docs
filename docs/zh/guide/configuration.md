@@ -32,16 +32,31 @@
 |     `avatar`     |   String    | 头像的图片链接 image.                                                                      |
 |     `beian`      |   Object    | 网站备案信息 (从版本 1.1.0 开始，这个配置拥有两个属性)                                     |
 
-### Beian 选项
-
-| Options  | Accepted Types | Usages        |
-| :------: | :------------: | ------------- |
-| `number` |     String     | Beian number. |
-|  `link`  |     String     | Beian link.   |
-
 :::tip
 如果每首设置 `avatar` 的图片链接，默认会去取 logo 的图片链接。
 :::
+
+---
+
+### 网站备案信息
+
+> `beian` 选项
+
+|   选项   | 接受类型 | 使用说明  |
+| :------: | :------: | --------- |
+| `number` |  String  | 备案编号. |
+|  `link`  |  String  | 备案链接. |
+
+---
+
+### 公安备案信息
+
+> `police_beian` 选项
+
+|   选项   | 接受类型 | 使用说明  |
+| :------: | :------: | --------- |
+| `number` |  String  | 备案编号. |
+|  `link`  |  String  | 备案链接. |
 
 ---
 
@@ -59,8 +74,11 @@ site:
   logo: https://image-website.com/path-to-image.jpg
   avatar: https://image-website.com/path-to-image.jpg
   beian: # 如果不需要可以让 number 和 link 保持空白
-    number: 123214213
+    number: "123123123123"
     link: 'https://link-to-beian.com'
+  police_beian:
+    number: "123123123123"
+    link: 'https://link-to-police-beian.com'
 ```
 
 ## 推荐文章

@@ -35,6 +35,18 @@ menu:
     path: 'https://github.com/Aurora/hexo-theme-Aurora'
 ```
 
+Since `v1.4.3`, external link also supports `mailto` links. Which will bring your user to their email page for sending out an email.
+
+```yaml{4-7}:no-line-numbers
+menu:
+  Tags: true
+  Archives: true
+  # External link for a github repo
+  Email:
+    name: 'Mail Me'
+    path: 'mailto:code.tridiamond@gmail.com'
+```
+
 ### Nested Links
 
 Sometime you would want to group a set of links into a sub-menu. The good news is Aurora also support nested links. To create a nested link, all we have to do is add in a `children` property to the menu.
@@ -93,4 +105,8 @@ menu:
       cn: '联系我'
       en: 'Contact'
     path: 'http://domain.com/contact'
+```
+
+```
+
 ```
