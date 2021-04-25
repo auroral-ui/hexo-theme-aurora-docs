@@ -35,11 +35,21 @@ footer: MIT Licensed | Copyright © 2020-present Auroral UI by TriDiamond
 
 **Aurora 是使用极光颜色和 UI 元素的下一代主题。它给你平滑流畅的色彩和未来感**
 
-## 🏅 我的赞助商 (咖啡供货商)
+## 🏆 我的赞助商 (咖啡供货商)
 
 帮助我继续维护此项目！ 💙
 
 [点击这里查询如何资助我](https://github.com/auroral-ui/hexo-theme-aurora#-donation)
+
+### 💜 月赞助商
+
+<ul style="display: flex; flex-direction: row;">
+  <li style="display: flex; flex-direction: column; align-items: center;  margin-right: 20px; border-radius: 9999px">
+    <img src=" https://q4.qlogo.cn/g?b=qq&nk=348920728&s=100" height="50" width="50">
+    <a href="https://afdian.net/u/13fd58d29e8811eb91a852540025c377" style="font-size: 1.2rem;">Storyi</a>
+    <b>¥ 15.00/m</b>
+  </li>
+</ul>
 
 ### 🥇 黄金赞助商
 
