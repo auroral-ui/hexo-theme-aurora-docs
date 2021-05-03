@@ -2,6 +2,15 @@
 
 这部分主要帮助我们配置页面 `header` 部分的 `meta` 信息
 
+---
+
+**更新日志**
+
+> - 版本 `1.5.0`
+>   - 添加了 [SEO meta(s)](/zh/guide/site-meta.html#seo-meta)
+
+---
+
 ## CDN 配置
 
 因为在国内使用国外的 CDN 链接会让网站变得非常的慢，所以这个配置可以根据你的需求切换国际或国内的 CDN。
@@ -24,6 +33,25 @@ site_meta:
 ```shell
 hexo cl && hexo g
 ```
+
+---
+
+## SEO meta
+
+- `description`: 对站点的描述.
+- `keywords`: 网站的关键词.
+- `author`: 网站作者.
+
+```yaml:no-line-numbers{4-6}
+site_meta:
+  cdn: cn
+  favicon:
+  description: '一位正在重塑知识的技术人 公众号：技术银河'
+  keywords: 'Frontend, Web development, Blog, Aurora Theme, TriDiamond'
+  author: 'TriDiamond'
+```
+
+---
 
 ## 自定义 Meta
 

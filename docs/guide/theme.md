@@ -2,6 +2,16 @@
 
 Aurora's theme options can also be customized in the configuration file.
 
+---
+
+**CHANGELOG**
+
+> - Since version `1.5.0+`
+>   - Added [Feature Layout](/guide/theme.html#feature-layout)
+>   - Added [Pinned Layout](/guide/theme.html#pinned-layout)
+
+---
+
 ## Dark Mode
 
 The theme's default mode is set to adapt to the system's mode.
@@ -45,3 +55,51 @@ theme:
     color_2: '#5433ff'
     color_3: '#ff0099'
 ```
+
+## Feature Layout
+
+![](/images/screenshots/feature-layout.png)
+
+Feature layout is a section where you display specially selected articles to your visitor on your home page.
+
+This section can display `three` feature articles at a time. The generation engine will choose the `three latest` articles that use the `feature: true` in the Front-Meta of your article markdown file.
+
+By default, the theme will enable feature layout. You can also turn it off using the `feature` property in your `_config.aurora.yml` configuration file.
+
+```yaml:no-line-numbers{4}
+theme:
+  dark_mode: true
+  profile_shape: diamond
+  feature: true
+```
+
+:::tip Question
+If the feature section will display `three` feature articles, when I only applied `2` of my articles as feature articles, what will happen?
+:::
+
+**Good question!**, if you applied less than `3` feature articles, the theme generator will pick up the latest articles to fill into the feature sections. It will also make sure it always has **3 feature articles** for display!
+
+:::tip Question
+Oh, I see. Wait!? You said: **"Always have 3 feature articles."**. What if I only have 2 articles in my blog. Then how are you going to get 3 feature articles?
+:::
+
+**No worries**! The Aurora engine had taken care of that too. If the engine could not get enough articles to fill up to 3 feature articles, the "Feature Layout" will automatically change to `Pinned Layout` instead.
+
+## Pinned Layout
+
+![](/images/screenshots/pinned-layout.png)
+
+The "Pinned Layout" can be enabled by setting the `feature` property to `false` in the `_config.aurora.yml` configuration file
+
+```yaml:no-line-numbers{4}
+theme:
+  dark_mode: true
+  profile_shape: diamond
+  feature: false
+```
+
+Setting `feature` to `false` will force the theme to use `Pinned Layout`.
+
+:::tip
+After changing the `feature` you will need to re-run `hexo cl & hexo g` to take effect.
+:::

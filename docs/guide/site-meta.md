@@ -2,6 +2,15 @@
 
 This part of the configuration mainly help us configure the `meta(s)` in the `header` section.
 
+---
+
+**CHANGELOG**
+
+> - Version `1.5.0`
+>   - Added [SEO meta(s)](/guide/site-meta.html#seo-meta)
+
+---
+
 ## CDN config
 
 Due to the fact that international CDN is extremely slow for China, therefore this part is used for bloggers that are hosting their blog in the China region.
@@ -24,6 +33,25 @@ After change the `cdn` property, you will need to rebuild the Hexo static files 
 ```shell:no-line-numbers
 hexo cl && hexo g
 ```
+
+---
+
+## SEO meta
+
+- `description`: description of the site.
+- `keywords`: keywords of the site.
+- `author`: author of the site.
+
+```yaml:no-line-numbers{4-6}
+site_meta:
+  cdn: cn
+  favicon:
+  description: '一位正在重塑知识的技术人 公众号：技术银河'
+  keywords: 'Frontend, Web development, Blog, Aurora Theme, TriDiamond'
+  author: 'TriDiamond'
+```
+
+---
 
 ## Custom Meta
 

@@ -174,6 +174,16 @@ html {
   }
 }
 
+.theme-default-content:not(.custom) > h1,
+.theme-default-content:not(.custom) > h2,
+.theme-default-content:not(.custom) > h3,
+.theme-default-content:not(.custom) > h4,
+.theme-default-content:not(.custom) > h5,
+.theme-default-content:not(.custom) > h6 {
+  // margin-top: 1.75rem;
+  // padding-top: 0;
+}
+
 h1,
 h2,
 h3,
@@ -232,12 +242,39 @@ h6 {
 }
 
 hr {
+  position: relative;
+  display: block;
   border: none;
+  height: 1px;
+  padding: 2.5em 0;
+}
+
+hr::before {
+  content: '§';
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -44%) rotate(60deg);
+  transform-origin: 50% 50%;
+  padding: 0.25rem;
+  color: var(--text-sub-accent);
+  background-color: var(--background-primary);
+  z-index: 10;
+  border-radius: 60%;
+}
+
+hr::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   background: var(--main-gradient);
-  margin: 1.2rem 0;
-  height: 2px;
-  width: 100%;
-  opacity: 0.35;
+  height: 3px;
+  width: 26%;
+  border-radius: 9999px;
+  opacity: 0.26;
+  margin: 2.5em auto;
 }
 
 strong {

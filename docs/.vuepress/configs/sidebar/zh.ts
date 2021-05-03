@@ -16,6 +16,7 @@ export const zh: SidebarConfig = {
         '/zh/guide/page.md',
         '/zh/guide/plugins.md',
         '/zh/guide/router.md',
+        '/zh/guide/markdown.md',
       ],
     },
   ],
