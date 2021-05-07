@@ -23,6 +23,31 @@ Now you would have this:
 
 If you see this, that means your page had successfully created.
 
+---
+
+### Creating the `about` page
+
+The theme enables `about` page by default, therefore we should create it before using the theme.
+
+To create a default about page, use the following `Hexo command`:
+
+```shell:no-line-numbers
+hexo create page about
+```
+
+After that, you will see a new folder had been created:
+
+```shell:no-line-numbers
+.
+└── source
+    └── about
+        └── index.md
+```
+
+You can feel free to edit the markdown file inside the `about/` folder, the content will be displayed in your about page.
+
+---
+
 ## Configure the menu
 
 You need to **configure the menu config** to include it in the navigation.

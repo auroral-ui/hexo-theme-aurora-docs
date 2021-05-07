@@ -23,6 +23,31 @@ hexo new page message-board
 
 如果你看到这个文件夹和文件被生成了，证明你的页面已经生成成功。
 
+---
+
+### 创建 “关于 (`about`)” 页面
+
+主题默认开启了 `about` 页面，所以我们需要创建这个 about 页，要不主题就无法正常显示 about 页。
+
+要创建这个默认的 about 页，只需要执行这个 `Hexo 的命令`：
+
+```shell:no-line-numbers
+hexo create page about
+```
+
+执行完毕后，你会发现在 `source/` 文件中多处了一个新的文件夹：
+
+```shell:no-line-numbers
+.
+└── source
+    └── about
+        └── index.md
+```
+
+你可以随意修改这个 `index.md` markdown 文件中的内容，此文件的内容将会现在在我们的 about 页面中。
+
+---
+
 ## 配置菜单
 
 要在菜单中显示，你需要在 **menu 配置** 中添加菜单配置。
