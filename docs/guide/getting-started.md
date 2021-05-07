@@ -15,7 +15,9 @@ This section will help you install the theme on an existing Hexo Blog project.
 
 ---
 
-- **Step 1**: In your console, go to the root directory of your Hexo project, then run the following command to install the theme:
+### Step 1 - Installing theme package
+
+> **In your console, go to the root directory of your Hexo project, then run the following command to install the theme:**
 
 <CodeGroup>
   <CodeGroupItem title="YARN">
@@ -37,7 +39,9 @@ npm install hexo-theme-aurora --save
 
 ---
 
-- **Step 2**: Config file `_config.yml` now need to be added in the root folder of your Hexo blog. You simply create a `_config.aurora.yml` to change the theme.
+### Step 2 - Generate theme config
+
+> **Config file `_config.yml` now need to be added in the root folder of your Hexo blog. You simply create a `_config.aurora.yml` to change the theme.**
 
 :::tip
 
@@ -52,10 +56,17 @@ cp -rf ./node_modules/hexo-theme-aurora/_config.yml ./_config.aurora.yml
 
 ---
 
-- **Step 3**: Due to the use of Vue-router, the default Hexo generated pages and posts' permalink will cause the Vue router fail to find the route, therefore you need to change the Hexo default permalink configuration.
+### Step 3 - Setting `permalink`
 
-  - **Step 3.1**: Open the `_config.yml` in your hexo root direction.
-  - **Step 3.2**: Change `permalink` to `/post/:title.html`
+> **Due to the use of Vue-router, the default Hexo generated pages and posts' permalink will cause the Vue router fail to find the route, therefore you need to change the Hexo default permalink configuration.**
+
+#### Step 3.1
+
+Open the `_config.yml` in your hexo root direction.
+
+#### Step 3.2
+
+Change `permalink` to `/post/:title.html`
 
 ```yaml:no-line-numbers{4}
 # URL
@@ -70,9 +81,13 @@ pretty_urls:
 
 ---
 
-- **Step 4** Last but not least, the theme use `Prismjs` for code highlighting, but Hexo default uses `highlightjs`, therefore you will need to change the Hexo config to use Prismjs instead:
+### Step 4 - Setting up code highlight
 
-> All you have to do is change highlight's enable to `false` and change prismjs's enable to `true`
+> **Last but not least, the theme use `Prismjs` for code highlighting, but Hexo default uses `highlightjs`, therefore you will need to change the Hexo config to use Prismjs instead:**
+
+:::tip
+All you have to do is change highlight's enable to `false` and change prismjs's enable to `true`
+:::
 
 ```yaml:no-line-numbers{2,9}
 highlight:
@@ -91,14 +106,48 @@ prismjs:
 
 ---
 
-- **Step 5**: To run the local server and check out your blog, simply run the following command.
+### Step 5 - Creating the `about` page
+
+The theme enables `about` page by default, therefore we should create it before using the theme.
+
+To create a default about page, use the following `Hexo command`:
+
+```shell:no-line-numbers
+hexo create page about
+```
+
+After that, you will see a new folder had been created:
+
+```shell:no-line-numbers
+.
+└── source
+    └── about
+        └── index.md
+```
+
+You can feel free to edit the markdown file inside the `about/` folder, the content will be displayed in your about page.
+
+---
+
+### Step 6 - Run local server
+
+> **To run the local server and check out your blog, simply run the following command.**
 
 ```shell:no-line-numbers
 hexo clean & hexo g & hexo server
 ```
 
 :::tip
-All file changes will force a static file update, however since the application is a SPA and all the data are fetched through APIs, therefore you will need to refresh the page to see the effect.
+Any configuration changes will require you to regenerate all the Hexo static files!
 :::
 
 After all the files finish generating, you will be able to visit your blog on [https://localhost:4000](https://localhost:4000).
+
+---
+
+## What is next?
+
+There are two places you should check out next:
+
+1. Setting up your [Page](/guide/page.html)
+2. Advance [configurations](/guide/configuration.html) document
