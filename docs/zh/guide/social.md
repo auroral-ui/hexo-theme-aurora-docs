@@ -108,10 +108,11 @@ socials:
 添加 svg 文件后，需要将其配置到 `_config.aurora.yml` 的配置文件中。
 
 ```yaml:no-line-numbers
-custom_socials:
-  facebook:
-    icon: /svg/facebook.svg
-    link: https://facebook.com
+socials:
+  customs:
+    facebook:
+      icon: /svg/facebook.svg
+      link: https://facebook.com
 ```
 
 ### 使用 Icon-Font
@@ -142,11 +143,12 @@ injects:
 因此，你需要像这样配置你的自定义社交链接：
 
 ```yaml:no-line-numbers
-custom_socials:
-  #! --- Using IconFont
-  facebook:
-    icon: iconfont icon-facebook
-    link: https://facebook.com
+socials:
+  customs:
+    #! --- Using IconFont
+    facebook:
+      icon: iconfont icon-facebook
+      link: https://facebook.com
 ```
 
 ### 使用图片
@@ -163,10 +165,11 @@ custom_socials:
 然后你可以这样配置它：
 
 ```yaml:no-line-numbers
-custom_socials:
-  facebook:
-    icon: /img/facebook.png
-    link: https://facebook.com
+socials:
+  customs:
+    facebook:
+      icon: /img/facebook.png
+      link: https://facebook.com
 ```
 
 :::warning

@@ -108,10 +108,11 @@ The `facebook.svg` content will look like this: (SVG code is from [`Iconfont`](h
 After adding the svg file, you will need to configure it to the `_config.aurora.yml` configuration file.
 
 ```yaml:no-line-numbers
-custom_socials:
-  facebook:
-    icon: /svg/facebook.svg
-    link: https://facebook.com
+socials:
+  customs:
+    facebook:
+      icon: /svg/facebook.svg
+      link: https://facebook.com
 ```
 
 ### Using Icon-Font
@@ -143,11 +144,12 @@ What you need for the `icon` property of the custom social link is the classes i
 Therefore you need to configure your custom social link like this:
 
 ```yaml:no-line-numbers
-custom_socials:
-  #! --- Using FontAwesome
-  facebook:
-    icon: fab fa-facebook-square
-    link: https://facebook.com
+socials:
+  customs:
+    #! --- Using FontAwesome
+    facebook:
+      icon: fab fa-facebook-square
+      link: https://facebook.com
 ```
 
 ### Using an image
@@ -164,10 +166,11 @@ Currently the theme support using `jpg` and `png`. Using an image is basically t
 Then you can configure it like this:
 
 ```yaml:no-line-numbers
-custom_socials:
-  facebook:
-    icon: /img/facebook.png
-    link: https://facebook.com
+socials:
+  customs:
+    facebook:
+      icon: /img/facebook.png
+      link: https://facebook.com
 ```
 
 :::warning
