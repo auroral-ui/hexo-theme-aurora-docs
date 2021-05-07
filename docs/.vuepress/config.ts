@@ -101,7 +101,21 @@ const config: UserConfig<DefaultThemeOptions> = {
     },
   },
 
-  // plugins: [['@vuepress/plugin-palette', { preset: 'sass' }]],
+  plugins: [
+    [
+      '@vuepress/plugin-search',
+      {
+        locales: {
+          '/': {
+            placeholder: 'Search',
+          },
+          '/zh/': {
+            placeholder: '搜索',
+          },
+        },
+      },
+    ],
+  ],
 
   onWatched: (_, watchers, restart) => {
     const watcher = chokidar.watch('configs/**/*.ts', {

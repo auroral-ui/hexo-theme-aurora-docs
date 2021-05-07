@@ -83,12 +83,56 @@
   --search-modal-key-gradient: linear-gradient(-225deg, #3f3e3e, #2c2c2c);
   --search-modal-key-shadow: inset 0 -2px 0 0 #363636, inset 0 0 1px 1px #2e2e2e,
     0 1px 2px 1px rgba(30, 35, 90, 0.4);
+
+  --search-accent-color: #893cf5 !important;
+  --search-text-color: #893cf5cc !important;
+  --search-border-color: #eaecef !important;
+
+  --search-item-text-color: #893cf5cc !important;
+  --search-item-focus-bg-color: #f3f4f5 !important;
+
+  --search-input-width: 8rem;
+  --search-result-width: 20rem;
 }
 
 body,
 html {
   font-family: 'Rubik', 'Noto Sans SC', sans-serif;
   background-color: var(--background-primary);
+}
+
+.search-box input {
+  background-color: var(--background-primary) !important;
+  border-color: var(--background-primary-alt) !important;
+}
+
+.suggestions {
+  background: var(--background-secondary) !important;
+}
+
+.search-box .suggestions {
+  background: var(--background-secondary) !important;
+  width: var(--search-result-width);
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  border: 1px solid var(--background-primary-alt) !important;
+  border-radius: 6px;
+  padding: 0.4rem;
+  list-style-type: none;
+}
+
+.search-box .suggestion.focus {
+  background-color: var(--background-primary) !important;
+}
+
+.search-box .suggestion.focus a {
+  color: var(--search-accent-color);
+}
+
+.search-box .suggestion a {
+  white-space: normal;
+  color: var(--search-item-text-color);
 }
 
 .navbar {
