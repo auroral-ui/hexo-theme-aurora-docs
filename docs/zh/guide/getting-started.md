@@ -151,3 +151,31 @@ hexo clean & hexo g & hexo server
 
 1. 配置你的 [Page（页面）](/guide/page.html)
 2. 高级[配置文档](/guide/configuration.html)
+
+## 使用托管服务必看
+因为 hexo 生成的是静态文件，主题使用了Vue-Router，非首页在直接刷新时会出现 404 page，请做如下配置以避免此问题
+### Netlify
+在您或存储库的根目录上，创建一个netlify.toml，其中包含以下内容、
+
+**netlify.toml**
+
+```toml
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+```
+
+### Vercel
+在您或存储库的根目录上，创建一个vercel.json，其中包含以下内容
+
+**vercel.json**
+
+```json
+{
+  "version": 2,
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/.*", "dest": "/index.html" }
+  ]
+}
+```
