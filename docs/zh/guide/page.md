@@ -9,7 +9,7 @@
 比如现在你想添加一个 **留言板（Message Board）** 页面。你只需要执行这个命令：
 
 ```shell:no-line-numbers
-hexo new page message-board
+hexo about page message-board
 ```
 
 执行后，你会发现 `source` 文件夹里面会出现一个 `message-board` 的文件夹。
@@ -45,6 +45,14 @@ hexo create page about
 ```
 
 你可以随意修改这个 `index.md` markdown 文件中的内容，此文件的内容将会现在在我们的 about 页面中。
+
+同时，你还需要这个`index.md`markdown文件的`Front-matter`中添加页面的类型为`about`:
+
+```markdown:no-line-numbers
+---
+type: about
+---
+```
 
 ---
 
