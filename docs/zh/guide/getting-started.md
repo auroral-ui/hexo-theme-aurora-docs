@@ -293,7 +293,7 @@ prismjs:
 要创建这个默认的 about 页，只需要执行这个 `Hexo 的命令`：
 
 ```shell:no-line-numbers
-hexo create page about
+hexo new page about
 ```
 
 执行完毕后，你会发现在 `source/` 文件中多处了一个新的文件夹：
