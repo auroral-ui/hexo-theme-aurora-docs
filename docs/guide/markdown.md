@@ -2,7 +2,9 @@
 
 **CHANGELOG**
 
-> - Since version `1.5.0+`
+> - Since version `2.0.0`
+>   - Added `abstract` property
+> - Since version `1.5.0`
 >   - Aurora added [custom markdown containers](/guide/markdown.html#custom-containers).
 >   - `Feature` property in Font-Meta can also affect the pinned state in Pinned Mode.
 
@@ -18,9 +20,21 @@ Aurora theme has it's own custom Front-Meta properties, they are used to configu
 ---
 feature: true
 ---
+```
 
 This `feature` property will allow the Aurora's engine to find these articles and add them into the feature list or pinned list. Which are used by the [Feature Layout](/guide/theme.html#feature-layout) or [Pinned Layout](/guide/theme.html#pinned-layout).
+
+### Abstracts property
+
+```markdown:no-line-numbers
+---
+abstracts: A abstracts of what this article is about.
+---
 ```
+
+By default the article's description use the first 140 characters from the content of the article.
+
+This `abstracts` property will tell the Aurora's engine what to use as the description of an article. Which is used in the Home page under each article's title. Can set a `abstract` for each of your articles.
 
 ---
 

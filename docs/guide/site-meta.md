@@ -18,7 +18,7 @@ Due to the fact that international CDN is extremely slow for China, therefore th
 | Properties | Usages                                               |
 | :--------: | :--------------------------------------------------- |
 |    `en`    | Will use **Jsdelivr CDNs** for all the script links. |
-|    `cn`    | Will use **BootCDN** for all the script links.       |
+|    `cn`    | Will use **SusTech** for all the script links.       |
 
 Example:
 

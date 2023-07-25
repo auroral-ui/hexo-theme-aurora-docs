@@ -95,6 +95,11 @@
   --search-result-width: 20rem;
 }
 
+html.dark {
+  --c-text-accent: #0fb6d6;
+  --c-brand: #0fb6d6;
+}
+
 body,
 html {
   font-family: 'Rubik', 'Noto Sans SC', sans-serif;
@@ -168,6 +173,7 @@ html {
       border: none;
       transition: 150ms all ease;
       &.primary {
+        color: #fff;
         background: var(--main-gradient);
         &:hover {
           opacity: 0.5;

@@ -2,7 +2,9 @@
 
 **更新记录**
 
-> - 版本 `1.5.0+`
+> - 版本 `2.0.0+`
+>   - 添加了 `abstracts` 文章简介属性
+> - 版本 `1.5.0`
 >   - Aurora 添加了 markdown [自定义容器](/zh/guide/markdown.html#custom-containers).
 >   - Font-Meta 中的`Feature`属性会影响在置顶模式下的置顶状态
 
@@ -21,6 +23,18 @@ feature: true
 ```
 
 这个`feature`属性将允许 Aurora 引擎找到这些文章，并将它们添加到推荐列表或置顶列表数据中。使用[推荐布局模式](/zh/guide/theme.html#推荐布局模式)或[置顶布局模式](/zh/guide/theme.html#置顶布局模式)。
+
+### Abstracts 属性
+
+```markdown:no-line-numbers
+---
+abstracts: 对于文章的一个简介.
+---
+```
+
+默认情况下，帖子的描述从文章内容中抽取头 140 个字符。
+
+这个 `abstracts` 属性将告诉 Aurora 的引擎使用什么作为帖子的描述。abstracts 的内容将座位主页下的文章的描述。每片文章都可以单独设置一个。
 
 ---
 

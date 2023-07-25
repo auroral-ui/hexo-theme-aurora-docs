@@ -1,14 +1,15 @@
-import type { UserConfig, DefaultThemeOptions } from 'vuepress'
-import { sidebar, navbar } from './configs'
-import { chalk, logger } from '@vuepress/utils'
-import * as chokidar from 'chokidar'
-const path = require('path')
+import * as chokidar from 'chokidar';
+import { defaultTheme, defineUserConfig } from 'vuepress';
 
-const config: UserConfig<DefaultThemeOptions> = {
+import { searchPlugin } from '@vuepress/plugin-search';
+import { colors, logger } from '@vuepress/utils';
+
+import { navbar, sidebar } from './configs';
+
+export default defineUserConfig({
   lang: 'en-US',
   title: 'Hexo Aurora',
   description: 'Documentation of theme usage.',
-
   head: [
     [
       'link',
@@ -16,8 +17,8 @@ const config: UserConfig<DefaultThemeOptions> = {
         rel: 'icon',
         type: 'image/png',
         sizes: '16x16',
-        href: `/images/icons/favicon-16x16.png`,
-      },
+        href: `/images/icons/favicon-16x16.png`
+      }
     ],
     [
       'link',
@@ -25,20 +26,33 @@ const config: UserConfig<DefaultThemeOptions> = {
         rel: 'icon',
         type: 'image/png',
         sizes: '32x32',
-        href: `/images/icons/favicon-32x32.png`,
-      },
-    ],
+        href: `/images/icons/favicon-32x32.png`
+      }
+    ]
   ],
 
-  themeConfig: {
-    logo: 'https://img-blog.csdnimg.cn/20210313122054101.png',
+  locales: {
+    // The key is the path for the locale to be nested under.
+    // As a special case, the default locale can use '/' as its path.
+    '/': {
+      lang: 'en-US',
+      title: 'Hexo Aurora Documentation',
+      description: 'Documentation of Hexo Aurora theme usage.'
+    },
+    '/zh/': {
+      lang: 'zh-CN',
+      title: 'Hexo Aurora 使用文档',
+      description: 'Hexo Aurora 使用文档'
+    }
+  },
 
+  theme: defaultTheme({
+    logo: 'https://res.cloudinary.com/tridiamond/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1625037705/ObsidianestLogo-hex_hecqbw.jpg?_s=public-apps',
     repo: 'auroral-ui/hexo-theme-aurora',
-
     docsRepo: 'auroral-ui/hexo-theme-aurora-docs',
-
     docsDir: 'docs',
-
+    colorMode: 'dark',
+    colorModeSwitch: false,
     locales: {
       '/': {
         // navbar
@@ -46,7 +60,7 @@ const config: UserConfig<DefaultThemeOptions> = {
 
         // sidebar
         sidebar: sidebar.en,
-        selectLanguageName: 'English',
+        selectLanguageName: 'English'
       },
       '/zh/': {
         // navbar
@@ -73,61 +87,43 @@ const config: UserConfig<DefaultThemeOptions> = {
           '这里什么都没有',
           '我们怎么到这来了？',
           '这是一个 404 页面',
-          '看起来我们进入了错误的链接',
+          '看起来我们进入了错误的链接'
         ],
         backToHome: '返回首页',
 
         // other
-        openInNewWindow: '在新窗口打开',
-      },
+        openInNewWindow: '在新窗口打开'
+      }
     },
 
     themePlugins: {
       // only enable git plugin in production mode
-      git: process.env.NODE_ENV === 'production',
-    },
-  },
-
-  locales: {
-    // 键名是该语言所属的子路径
-    // 作为特例，默认语言可以使用 '/' 作为其路径。
-    '/': {
-      lang: 'en-US',
-      description: 'Futuristic auroral theme for Hexo',
-    },
-    '/zh/': {
-      lang: 'zh-CN',
-      description: '迈向未来的 Hexo 极光主题',
-    },
-  },
+      git: process.env.NODE_ENV === 'production'
+    }
+  }),
 
   plugins: [
-    [
-      '@vuepress/plugin-search',
-      {
-        locales: {
-          '/': {
-            placeholder: 'Search',
-          },
-          '/zh/': {
-            placeholder: '搜索',
-          },
+    searchPlugin({
+      locales: {
+        '/': {
+          placeholder: 'Search'
         },
-      },
-    ],
+        '/zh/': {
+          placeholder: '搜索'
+        }
+      }
+    })
   ],
 
   onWatched: (_, watchers, restart) => {
     const watcher = chokidar.watch('configs/**/*.ts', {
       cwd: __dirname,
-      ignoreInitial: true,
-    })
+      ignoreInitial: true
+    });
     watcher.on('change', async (file) => {
-      logger.info(`file ${chalk.magenta(file)} is modified`)
-      await restart()
-    })
-    watchers.push(watcher)
-  },
-}
-
-export = config
+      logger.info(`file ${colors.magenta(file)} is modified`);
+      await restart();
+    });
+    watchers.push(watcher);
+  }
+});

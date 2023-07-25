@@ -1,7 +1,7 @@
 ---
 home: true
 title: Home
-heroImage: https://img-blog.csdnimg.cn/20210313122054101.png
+heroImage: https://res.cloudinary.com/tridiamond/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1625037705/ObsidianestLogo-hex_hecqbw.jpg?_s=public-apps
 actions:
   - text: 快速上手
     link: /zh/guide/getting-started.html
