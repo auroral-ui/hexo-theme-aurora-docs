@@ -293,7 +293,7 @@ The theme enables `about` page by default, therefore we should create it before 
 To create a default about page, use the following `Hexo command`:
 
 ```shell:no-line-numbers
-hexo create page about
+hexo new page about
 ```
 
 After that, you will see a new folder had been created:
