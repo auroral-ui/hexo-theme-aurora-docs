@@ -7,6 +7,16 @@
 
 ---
 
+## 从版本 1.x 升级版本 2.x
+
+在版本 2.x 中所有的 Hexo 的脚本和生成器都被移动到一个单独的 Hexo 插件包中 ([hexo-plugin-aurora](https://github.com/auroral-ui/hexo-plugin-aurora))。那么版本 2.x 后安装 Hexo Aurora 主题的方式就不一样了。
+
+如果您是这个主题的全新用户，只需跟着下面的安装指南即可。
+
+如果是从 版本 1.x 升级到 版本 2.x 的，请看 [版本 v2.x 升级指南](/zh/guide/upgrade.html#v1-x-to-v2-x-upgrade)。
+
+---
+
 ## 安装指南
 
 本节将帮助您在现有的 Hexo 博客项目上安装 Aurora 主题。

@@ -1,9 +1,8 @@
-import type { SidebarConfig } from '@vuepress/theme-default'
+import type { SidebarConfig } from '@vuepress/theme-default';
 
 export const zh: SidebarConfig = {
   '/zh/guide/': [
     {
-      isGroup: true,
       text: '指南',
       children: [
         '/zh/guide/README.md',
@@ -17,7 +16,8 @@ export const zh: SidebarConfig = {
         '/zh/guide/plugins.md',
         '/zh/guide/router.md',
         '/zh/guide/markdown.md',
-      ],
-    },
-  ],
-}
+        '/guide/upgrade.md'
+      ]
+    }
+  ]
+};

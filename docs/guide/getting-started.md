@@ -7,6 +7,16 @@
 
 ---
 
+## Upgrade from v1.x to v2.x
+
+Since all the hexo script and generators had being moved to a separate Hexo plugin package ([hexo-plugin-aurora](https://github.com/auroral-ui/hexo-plugin-aurora)). Therefore the way we install `Hexo Aurora Theme` had changed since v2.x.
+
+If you are a brand new user of this theme, just follow the Installation guide below.
+
+If you are upgrading from v1.x to v2.x, please follow the [v2.x upgrade guide](/guide/upgrade.html#v1-x-to-v2-x-upgrade)
+
+---
+
 ## Installation
 
 This section will help you install the theme on an existing Hexo Blog project.
