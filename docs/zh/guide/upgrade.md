@@ -4,7 +4,7 @@
 
 在版本 2.x 中所有的 Hexo 的脚本和生成器都被移动到一个单独的 Hexo 插件包中 ([hexo-plugin-aurora](https://github.com/auroral-ui/hexo-plugin-aurora))。那么版本 2.x 后安装 Hexo Aurora 主题的方式就不一样了。
 
-### Step 1 - 升级 Hexo and Hexo 插件
+### 第一步 - 升级 Hexo and Hexo 插件
 
 如果您正在运行旧版本的 Hexo 软件包，请确保将其升级到最新的版本 6.x+。
 
@@ -55,7 +55,7 @@ npm install hexo@latest --save
 ...
 ```
 
-### Step 2 - 安装最新 Aurora 主题和插件
+### 第二步 - 安装最新 Aurora 主题和插件
 
 在升级了所有与 Hexo 相关的软件包之后，现在可以安装最新的 v2.x 的主题了。
 
@@ -79,7 +79,7 @@ npm install hexo-theme-aurora@latest hexo-plugin-aurora@latest --save
   </CodeGroupItem>
 </CodeGroup>
 
-### Step 3 - Clean and Re-generate
+### 第三步 - 清理并重新生成博客
 
 在安装了最新的主题之后，您需要清理现有的 Hexo 数据并重新生成它。
 
