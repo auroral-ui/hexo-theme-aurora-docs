@@ -1,6 +1,6 @@
-# Theme upgrade
+# 主题升级
 
-## v1.x to v2.x Upgrade
+## 从 v1.x 升级到 v2.x
 
 在版本 2.x 中所有的 Hexo 的脚本和生成器都被移动到一个单独的 Hexo 插件包中 ([hexo-plugin-aurora](https://github.com/auroral-ui/hexo-plugin-aurora))。那么版本 2.x 后安装 Hexo Aurora 主题的方式就不一样了。
 
