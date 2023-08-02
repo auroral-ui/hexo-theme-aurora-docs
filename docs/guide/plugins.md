@@ -208,6 +208,9 @@ Config attributes:
 |  `requiredMeta`  | Set required fields, default anonymous, optional values: `[]`, `['nick']`, `['nick', 'mail']`                                                                                                             |
 | `commentSorting` | Comment list sorting methods. Optional values: `'latest'`, `'oldest'`, `'hottest'`                                                                                                                        |
 | `recentComment`  | To enable recent comment feature.                                                                                                                                                                         |
+| `imageUploader`  | The default behavior is to embed images Base 64 encoded, you can set this to `false` to disable image uploading.                                                                                          |
+|   `wordLimit`    | Comment word s limit. When a single number is filled in, it 's the maximum number of comment words. No limit when set to `0`.                                                                             |
+|    `pageSize`    | number of comments per page.                                                                                                                                                                              |
 
 **Template**
 

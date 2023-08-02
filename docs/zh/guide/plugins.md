@@ -211,6 +211,9 @@ twikoo:
 |      `meta`      | 评论者相关属性。可选值: `'nick'`, `'mail'`, 'link'                                                                                                   |
 |  `requiredMeta`  | 设置必填项，默认匿名，可选值: `[]`, `['nick']`, `['nick', 'mail']`                                                                                   |
 | `commentSorting` | 评论列表排序方式。可选值: `'latest'`, `'oldest'`, `'hottest'`                                                                                        |
+| `imageUploader`  | 你可以设置为 `false` 以禁用图片上传功能。                                                                                                            |
+|   `wordLimit`    | 评论字数限制。填入单个数字时为最大字数限制。设置为 `0` 时无限制。                                                                                    |
+|    `pageSize`    | 评论列表分页，每页条数。                                                                                                                             |
 
 **Template**
 
