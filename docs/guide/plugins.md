@@ -225,6 +225,9 @@ waline:
   meta: ['nick', 'mail']
   requiredMeta: ['nick', 'mail']
   commentSorting: 'latest'
+  wordLimit: 0
+  imageUploader: false
+  pageSize: 10
   serverURL: '' # Server URL
 ```
 
