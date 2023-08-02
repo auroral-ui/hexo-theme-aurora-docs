@@ -131,6 +131,34 @@ Config attributes:
 
 For more usage information, go to [Valine's](https://valine.js.org/) documentation website.
 
+### Twikoo
+
+配置属性：
+
+|   Attributes    | Description                                                               |
+| :-------------: | :------------------------------------------------------------------------ |
+|    `enable`     | **true** to enable, **false** to disable.                                 |
+|     `envId`     | Tencent Cloud use envId；Vercel use website url（https://xxx.vercel.app） |
+| `recentComment` | To enable recent comment feature.                                         |
+
+更多的使用指南请查看 [Twikoo's](https://twikoo.js.org/) 插件的官网。
+
+### Waline
+
+配置属性：
+
+|    Attributes    | Description                                                                                                                                                                                               |
+| :--------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|     `enable`     | **true** to enable, **false** to disable.闭.                                                                                                                                                              |
+|    `reaction`    | Add emoji interaction function to the article, set it to `true` to provide the default emoji, you can also customize the emoji image by setting the emoji url array, and supports a maximum of 8 emojis.  |
+|     `login`      | Login mode status, optional values: `'enable'`: enable login (default); `'disable'`: Login is disabled, users should fill in information to comment; `'force'`: Forced login, users must login to comment |
+|      `meta`      | Reviewer attributes. Optional values: `'nick'`, `'mail'`, 'link'                                                                                                                                          |
+|  `requiredMeta`  | Set required fields, default anonymous, optional values: `[]`, `['nick']`, `['nick', 'mail']`                                                                                                             |
+| `commentSorting` | Comment list sorting methods. Optional values: `'latest'`, `'oldest'`, `'hottest'`                                                                                                                        |
+| `recentComment`  | To enable recent comment feature.                                                                                                                                                                         |
+
+更多的使用指南请查看 [Waline's](https://waline.js.org/) 插件的官网。
+
 ## Bot Dia
 
 ![](https://img-blog.csdnimg.cn/2021041520261017.gif)
