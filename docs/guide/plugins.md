@@ -110,6 +110,25 @@ Config attributes:
 |    `recentComment`    | To enable recent comment feature.                                                                                                                                                                                               |
 |        `proxy`        | GitHub oauth request reverse proxy for CORS.                                                                                                                                                                                    |
 
+**Template**
+
+```yaml
+# For local development only!
+gitalk:
+  enable: true
+  autoExpand: true
+  clientID: ''
+  clientSecret: ''
+  repo: '' ## dev-blo-comments
+  owner: '' ## owner name
+  admin: [''] ## ['admin_name']
+  id: uid
+  language: en
+  distractionFreeMode: true
+  recentComment: true
+  proxy: ''
+```
+
 For more usage information, go to [Gitalk's](https://github.com/gitalk/gitalk) repo.
 
 ### Valine
@@ -129,6 +148,26 @@ Config attributes:
 |     `admin`     | Used to define which comment is posted by author of the blog.                           |
 | `recentComment` | To enable recent comment feature.                                                       |
 
+**Template**
+
+```yaml
+# Valine comment plugin (recommended!)
+# see https://valine.js.org/quickstart.html
+valine:
+  enable: false
+  app_id:
+  app_key:
+  avatar: ''
+  placeholder: Leave your thoughts behind~
+  visitor: true
+  lang: en
+  avatarForce: false
+  meta: ['nick', 'mail']
+  requiredFields: ['nick', 'mail']
+  admin: '' # admin username
+  recentComment: true
+```
+
 For more usage information, go to [Valine's](https://valine.js.org/) documentation website.
 
 ### Twikoo
@@ -140,6 +179,19 @@ For more usage information, go to [Valine's](https://valine.js.org/) documentati
 |    `enable`     | **true** to enable, **false** to disable.                                 |
 |     `envId`     | Tencent Cloud use envId；Vercel use website url（https://xxx.vercel.app） |
 | `recentComment` | To enable recent comment feature.                                         |
+
+**Template**
+
+```yaml
+# Twikoo comment plugin
+# see https://twikoo.js.org/quick-start.html
+twikoo:
+  enable: false
+  recentComment: true
+  envId: xxxxxxxxxxxxxxx # 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  # region: ap-guangzhou # 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+  lang: 'en' # 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
+```
 
 更多的使用指南请查看 [Twikoo's](https://twikoo.js.org/) 插件的官网。
 
@@ -156,6 +208,22 @@ For more usage information, go to [Valine's](https://valine.js.org/) documentati
 |  `requiredMeta`  | Set required fields, default anonymous, optional values: `[]`, `['nick']`, `['nick', 'mail']`                                                                                                             |
 | `commentSorting` | Comment list sorting methods. Optional values: `'latest'`, `'oldest'`, `'hottest'`                                                                                                                        |
 | `recentComment`  | To enable recent comment feature.                                                                                                                                                                         |
+
+**Template**
+
+```yaml
+# Waline comment plugin
+# see https://waline.js.org/guide/get-started/
+waline:
+  enable: false
+  recentComment: true
+  reaction: false
+  login: 'disable'
+  meta: ['nick', 'mail']
+  requiredMeta: ['nick', 'mail']
+  commentSorting: 'latest'
+  serverURL: '' # 填写服务端地址
+```
 
 更多的使用指南请查看 [Waline's](https://waline.js.org/) 插件的官网。
 
