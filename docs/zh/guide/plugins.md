@@ -110,6 +110,25 @@ author: author-1
 |    `recentComment`    | 是否开启最近评论功能。                                                                                                                                                       |
 |        `proxy`        | GitHub 授权请求的反向代理                                                                                                                                                    |
 
+**Template**
+
+```yaml
+# For local development only!
+gitalk:
+  enable: true
+  autoExpand: true
+  clientID: ''
+  clientSecret: ''
+  repo: '' ## dev-blo-comments
+  owner: '' ## owner name
+  admin: [''] ## ['admin_name']
+  id: uid
+  language: en
+  distractionFreeMode: true
+  recentComment: true
+  proxy: ''
+```
+
 :::warning
 如果你在使用 Gitalk 的时候，出现 403 或者 422 这种报错的话，请根据[这里的教程](https://mjava.top/archive/33f09b03-a5a7-4d66-93d3-7063905f9b81/)，自己搭建一个反向代理服务，然后把你建立好的方向代理地址配置给 `proxy` 即可。
 :::
@@ -133,6 +152,26 @@ author: author-1
 |     `admin`     | 用于标记那个评论是博主的                                         |
 | `recentComment` | 是否开启最近评论功能。                                           |
 
+**Template**
+
+```yaml
+# Valine comment plugin (recommended!)
+# see https://valine.js.org/quickstart.html
+valine:
+  enable: false
+  app_id:
+  app_key:
+  avatar: ''
+  placeholder: Leave your thoughts behind~
+  visitor: true
+  lang: en
+  avatarForce: false
+  meta: ['nick', 'mail']
+  requiredFields: ['nick', 'mail']
+  admin: '' # admin username
+  recentComment: true
+```
+
 更多的使用指南请查看 [Valine's](https://valine.js.org/) 插件的官网。
 
 ### Twikoo
@@ -144,6 +183,19 @@ author: author-1
 |    `enable`     | 使用**true**开启, 使用**false**关闭.                            |
 |     `envId`     | 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app） |
 | `recentComment` | 是否开启最近评论功能。                                          |
+
+**Template**
+
+```yaml
+# Twikoo comment plugin
+# see https://twikoo.js.org/quick-start.html
+twikoo:
+  enable: false
+  recentComment: true
+  envId: xxxxxxxxxxxxxxx # 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  # region: ap-guangzhou # 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+  lang: 'en' # 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
+```
 
 更多的使用指南请查看 [Twikoo's](https://twikoo.js.org/) 插件的官网。
 
@@ -159,6 +211,22 @@ author: author-1
 |      `meta`      | 评论者相关属性。可选值: `'nick'`, `'mail'`, 'link'                                                                                                   |
 |  `requiredMeta`  | 设置必填项，默认匿名，可选值: `[]`, `['nick']`, `['nick', 'mail']`                                                                                   |
 | `commentSorting` | 评论列表排序方式。可选值: `'latest'`, `'oldest'`, `'hottest'`                                                                                        |
+
+**Template**
+
+```yaml
+# Waline comment plugin
+# see https://waline.js.org/guide/get-started/
+waline:
+  enable: false
+  recentComment: true
+  reaction: false
+  login: 'disable'
+  meta: ['nick', 'mail']
+  requiredMeta: ['nick', 'mail']
+  commentSorting: 'latest'
+  serverURL: '' # Server URL
+```
 
 更多的使用指南请查看 [Waline's](https://waline.js.org/) 插件的官网。
 

@@ -172,7 +172,7 @@ For more usage information, go to [Valine's](https://valine.js.org/) documentati
 
 ### Twikoo
 
-配置属性：
+Config attributes:
 
 |   Attributes    | Description                                                               |
 | :-------------: | :------------------------------------------------------------------------ |
@@ -193,15 +193,15 @@ twikoo:
   lang: 'en' # 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
 ```
 
-更多的使用指南请查看 [Twikoo's](https://twikoo.js.org/) 插件的官网。
+For more usage information, go to [Twikoo's](https://twikoo.js.org/) documentation website.
 
 ### Waline
 
-配置属性：
+Config attributes:
 
 |    Attributes    | Description                                                                                                                                                                                               |
 | :--------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|     `enable`     | **true** to enable, **false** to disable.闭.                                                                                                                                                              |
+|     `enable`     | **true** to enable, **false** to disable.                                                                                                                                                                 |
 |    `reaction`    | Add emoji interaction function to the article, set it to `true` to provide the default emoji, you can also customize the emoji image by setting the emoji url array, and supports a maximum of 8 emojis.  |
 |     `login`      | Login mode status, optional values: `'enable'`: enable login (default); `'disable'`: Login is disabled, users should fill in information to comment; `'force'`: Forced login, users must login to comment |
 |      `meta`      | Reviewer attributes. Optional values: `'nick'`, `'mail'`, 'link'                                                                                                                                          |
@@ -222,10 +222,10 @@ waline:
   meta: ['nick', 'mail']
   requiredMeta: ['nick', 'mail']
   commentSorting: 'latest'
-  serverURL: '' # 填写服务端地址
+  serverURL: '' # Server URL
 ```
 
-更多的使用指南请查看 [Waline's](https://waline.js.org/) 插件的官网。
+For more usage information, go to [Waline's](https://waline.js.org/) documentation website.
 
 ## Bot Dia
 
