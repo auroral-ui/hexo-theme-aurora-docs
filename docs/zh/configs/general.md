@@ -1,4 +1,4 @@
-# 配置
+# 基础配置
 
 ## 配置文件
 
@@ -31,6 +31,7 @@
 |      `logo`      |   String    | Logo 的图片链接 image.                                                                     |
 |     `avatar`     |   String    | 头像的图片链接 image.                                                                      |
 |     `beian`      |   Object    | 网站备案信息 (从版本 1.1.0 开始，这个配置拥有两个属性)                                     |
+|  `started_date`  |   String    | 建站开始日期（用于脚步显示建站时长）格式：2023-08-08                                       |
 
 :::tip
 如果每首设置 `avatar` 的图片链接，默认会去取 logo 的图片链接。
@@ -79,25 +80,5 @@ site:
   police_beian:
     number: "123123123123"
     link: 'https://link-to-police-beian.com'
-```
-
-## 推荐文章
-
-Aurora 主题在首页有推荐板块，任何文章都可以设置在这里显示显示。
-
-要设置一篇文章在推荐板块中显示，只需在 Front-Meta 中添加一个 `feature: true` 属性即可。
-
-例如:
-
-```markdown:no-line-numbers{9}
----
-title: Article Title
-date: 2020-08-15 18:49:36
-tags:
-  - Tag
-categories:
-  - Cate
-cover: https://cover.png
-feature: true
----
+  started_date: 2023-08-08
 ```

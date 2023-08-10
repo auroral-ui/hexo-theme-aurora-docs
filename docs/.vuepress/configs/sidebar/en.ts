@@ -3,20 +3,43 @@ import type { SidebarConfig } from '@vuepress/theme-default';
 export const en: SidebarConfig = {
   '/guide/': [
     {
-      text: 'Guide',
+      text: 'Getting started',
+      children: ['/guide/README.md', '/guide/getting-started.md', '/guide/upgrade.md']
+    },
+    {
+      text: 'Configurations',
       children: [
-        '/guide/README.md',
-        '/guide/getting-started.md',
-        '/guide/configuration.md',
-        '/guide/menu.md',
-        '/guide/theme.md',
-        '/guide/social.md',
-        '/guide/site-meta.md',
-        '/guide/page.md',
-        '/guide/plugins.md',
-        '/guide/router.md',
-        '/guide/markdown.md',
-        '/guide/upgrade.md'
+        '/configs/general.md',
+        '/configs/menu.md',
+        '/configs/theme.md',
+        '/configs/router.md',
+        '/configs/post.md',
+        '/configs/page.md',
+        '/configs/social.md',
+        '/configs/plugins.md',
+        '/configs/site-meta.md',
+        '/configs/markdown.md'
+      ]
+    }
+  ],
+  '/configs/': [
+    {
+      text: 'Getting started',
+      children: ['/guide/README.md', '/guide/getting-started.md', '/guide/upgrade.md']
+    },
+    {
+      text: 'Configurations',
+      children: [
+        '/configs/general.md',
+        '/configs/menu.md',
+        '/configs/theme.md',
+        '/configs/router.md',
+        '/configs/post.md',
+        '/configs/page.md',
+        '/configs/social.md',
+        '/configs/plugins.md',
+        '/configs/site-meta.md',
+        '/configs/markdown.md'
       ]
     }
   ]

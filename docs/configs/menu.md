@@ -81,7 +81,7 @@ Even if you set a `path` for the parent link, the path link will be ignored.
 Internal links can be added with a custom page. Please refer to the [Page](/guide/page.html) section of the document for usage details.
 :::
 
-## I18n Menu
+## Multi-language Menu
 
 Since the theme has I18n multi-language support, therefore the menu name also support multi-language setup. So far the theme support English and Chinese translations for the menu. (_Will support more in the near future._)
 
@@ -91,6 +91,23 @@ This property has **2 options**:
 
 - `cn` - for Chinese
 - `en` - for English
+
+#### Setup Custom Multi-language name for default menus
+
+Default menus like `Tags`, `Archives`, `About` and `Links` pages, we can also config them so they support custom multi-languages.
+
+Here is an example for setting up an `i18n` config for the Tags page.
+
+```yaml{2-5}:no-line-numbers
+menu:
+  Tags:
+    i18n:
+      cn: My Tags
+      en: 我的标签
+  Archives: true
+```
+
+#### Multi-language for custom pages
 
 For example you want to add a menu call `contact`, this is how to want to configure it.
 
