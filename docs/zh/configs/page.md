@@ -9,7 +9,7 @@
 比如现在你想添加一个 **留言板（Message Board）** 页面。你只需要执行这个命令：
 
 ```shell:no-line-numbers
-hexo create page message-board
+hexo new page message-board
 ```
 
 执行后，你会发现 `source` 文件夹里面会出现一个 `message-board` 的文件夹。
@@ -50,7 +50,7 @@ menu:
 要创建这个默认的 about 页，只需要执行这个 `Hexo 的命令`：
 
 ```shell:no-line-numbers
-hexo create page about
+hexo new page about
 ```
 
 执行完毕后，你会发现在 `source/` 文件中多处了一个新的文件夹：
@@ -84,7 +84,7 @@ menu:
 要创建这个默认的 links 页，只需要执行这个 `Hexo 的命令`：
 
 ```shell:no-line-numbers
-hexo create page links
+hexo new page links
 ```
 
 执行完毕后，你会发现在 `source/` 文件中多处了一个新的文件夹：

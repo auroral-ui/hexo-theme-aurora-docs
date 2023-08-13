@@ -9,7 +9,7 @@ Creating a page is easy with Hexo, basically you just need to add a `index.md` f
 For example you want to add a **Message Board** page. All you have to do is run a Hexo command:
 
 ```shell:no-line-numbers
-hexo create page message-board
+hexo new page message-board
 ```
 
 Now you would have this:
@@ -51,7 +51,7 @@ The theme enables `about` page by default, therefore we should create it before 
 To create a default about page, use the following `Hexo command`:
 
 ```shell:no-line-numbers
-hexo create page about
+hexo new page about
 ```
 
 After that, you will see a new folder had been created:
@@ -85,7 +85,7 @@ This page is to display a list of all your friends' blogs.
 To create this `links` page, you need to run this `Hexo command`:
 
 ```shell:no-line-numbers
-hexo create page links
+hexo new page links
 ```
 
 Now you would have this in the `source/` folder:
