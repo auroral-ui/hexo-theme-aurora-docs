@@ -115,7 +115,7 @@ pretty_urls:
 All you have to do is change highlight's enable to `false` and change prismjs's enable to `true`
 :::
 
-```yaml:no-line-numbers{2,9}
+```yaml:no-line-numbers{2,9-10}
 highlight:
   enable: false
   line_number: true
@@ -125,7 +125,7 @@ highlight:
   hljs: false
 prismjs:
   enable: true
-  preprocess: true
+  preprocess: false
   line_number: true
   tab_replace: ''
 ```

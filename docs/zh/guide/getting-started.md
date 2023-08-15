@@ -115,7 +115,7 @@ pretty_urls:
 - 把 `prismjs` 的启用改为`true`
 - 把 `prismjs` 下的 `preprocess` 改为 `false`
 
-```yaml:no-line-numbers{2,9}
+```yaml:no-line-numbers{2,9-10}
 highlight:
   enable: false
   line_number: true
@@ -125,7 +125,7 @@ highlight:
   hljs: false
 prismjs:
   enable: true
-  preprocess: true
+  preprocess: false
   line_number: true
   tab_replace: ''
 ```
