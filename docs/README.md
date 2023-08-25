@@ -19,7 +19,7 @@ features:
 footer: MIT Licensed | Copyright © 2020-present Auroral UI by TriDiamond
 ---
 
-![](https://img-blog.csdnimg.cn/202103280030531.png)
+![](https://ik.imagekit.io/bennyxguo/Hexo%20Aurora/Home.png?updatedAt=1692990701562)
 
 ---
 
@@ -34,37 +34,6 @@ footer: MIT Licensed | Copyright © 2020-present Auroral UI by TriDiamond
 </p>
 
 **Aurora is a next generation theme using Aurora colours and UI elements. It give you the feel of smooth flow of colours and a futuristic feeling.**
-
-## 🏆 My sponsors (Coffee Suppliers)
-
-Keep me working on this project 💙
-
-[Click on to check out how to sponsor me.](https://github.com/auroral-ui/hexo-theme-aurora#-donation)
-
-### 💜 Monthly Supplier
-
-<ul style="display: flex; flex-direction: row;">
-  <li style="display: flex; flex-direction: column; align-items: center;  margin-right: 20px; border-radius: 9999px">
-    <img src=" https://q4.qlogo.cn/g?b=qq&nk=348920728&s=100" height="50" width="50">
-    <a href="https://afdian.net/u/13fd58d29e8811eb91a852540025c377" style="font-size: 1.2rem;">Storyi</a>
-    <b>¥ 15.00/m</b>
-  </li>
-</ul>
-
-### 🥇 Golden Supplier
-
-<ul style="display: flex; flex-direction: row;">
-  <li style="display: flex; flex-direction: column; align-items: center;  margin-right: 20px; border-radius: 9999px">
-    <img src=" https://q4.qlogo.cn/g?b=qq&nk=68879747&s=100" height="50" width="50">
-    <a href="https://github.com/MozLee" style="font-size: 1.2rem;">MozLee</a>
-    <b>¥ 99.99</b>
-  </li>
-  <li style="display: flex; flex-direction: column; align-items: center;  margin-right: 20px; border-radius: 9999px">
-    <img src=" https://q4.qlogo.cn/g?b=qq&nk=1349703146&s=100" height="50" width="50">
-    <a href="https://gitee.com/appleaday" style="font-size: 1.2rem;">=鱼</a>
-    <b>¥ 99.00</b>
-  </li>
-</ul>
 
 ## What's in Aurora?
 

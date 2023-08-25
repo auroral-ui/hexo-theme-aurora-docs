@@ -2,6 +2,7 @@ import * as chokidar from 'chokidar';
 import { defaultTheme, defineUserConfig } from 'vuepress';
 
 import { searchPlugin } from '@vuepress/plugin-search';
+import { docsearchPlugin } from '@vuepress/plugin-docsearch';
 import { colors, logger } from '@vuepress/utils';
 
 import { navbar, sidebar } from './configs';
@@ -103,13 +104,26 @@ export default defineUserConfig({
   }),
 
   plugins: [
-    searchPlugin({
+    docsearchPlugin({
+      appId: 'T82KV2CUNO',
+      apiKey: '5d1505a3916c713263e0ec0ee5671d29',
+      indexName: 'aurora-tridiamond',
       locales: {
         '/': {
-          placeholder: 'Search'
+          placeholder: 'Search Documentation',
+          translations: {
+            button: {
+              buttonText: 'Search Documentation'
+            }
+          }
         },
         '/zh/': {
-          placeholder: '搜索'
+          placeholder: '搜索文档',
+          translations: {
+            button: {
+              buttonText: '搜索文档'
+            }
+          }
         }
       }
     })
