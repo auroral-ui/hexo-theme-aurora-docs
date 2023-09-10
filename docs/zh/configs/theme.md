@@ -101,3 +101,123 @@ theme:
 :::tip
 更改`feature`后，你需要重新运行`hexo cl & hexo g`才能生效。
 :::
+
+## 代码高亮
+
+在此版本代码高亮引擎更改为 Shiki。使用这个新引擎我们需要更新 `_config.yml` 中的 `highlight` 和 `prismjs` 配置。
+
+```yaml:no-line-numbers{2,4}
+highlight:
+  enable: false
+prismjs:
+  enable: false
+```
+
+然后在 `_config.aurora.yml` 中添加新的 `shiki` 配置。
+
+```yaml:no-line-numbers
+#! ---------------------------------------------------------------
+#! Highlighter Shiki
+#! ---------------------------------------------------------------
+shiki:
+  enable: true
+  theme:
+  externalTheme:
+  backgroundColor: '#1a1a1a'
+```
+
+### 使用默认主题
+
+可以从下面的 shiki 提供的默认主题中选择一个主题名，并且把这个名字配置给 `shiki` 下的 `theme` 字段。比如 `material-theme-palenight`。
+
+```yaml:no-line-numbers{3}
+shiki:
+  enable: true
+  theme: material-theme-palenight
+  externalTheme:
+  backgroundColor: '#1a1a1a'
+```
+
+可用的默认主题列表：
+
+```typescript:no-line-numbers
+export type Theme =
+  | 'css-variables'
+  | 'dark-plus'
+  | 'dracula-soft'
+  | 'dracula'
+  | 'github-dark-dimmed'
+  | 'github-dark'
+  | 'github-light'
+  | 'hc_light'
+  | 'light-plus'
+  | 'material-theme-darker'
+  | 'material-theme-lighter'
+  | 'material-theme-ocean'
+  | 'material-theme-palenight'
+  | 'material-theme'
+  | 'min-dark'
+  | 'min-light'
+  | 'monokai'
+  | 'nord'
+  | 'one-dark-pro'
+  | 'poimandres'
+  | 'rose-pine-dawn'
+  | 'rose-pine-moon'
+  | 'rose-pine'
+  | 'slack-dark'
+  | 'slack-ochin'
+  | 'solarized-dark'
+  | 'solarized-light'
+  | 'vitesse-dark'
+  | 'vitesse-light';
+```
+
+### 使用自定义主题
+
+如果以上都不是你想要的，那么你可以通过从 Github repo 下载主题 json 文件来导入你自己的。
+
+例如，我制作的 VSCode 主题 [aurora-future-vcode-theme](https://github.com/auroral-ui/aurora-future-vscode-theme)，这个主题可以从[这里](https://github.com/auroral-ui/aurora-future-vscode-theme/blob/main/themes/Aurora%20Future-color-theme.json)下载。
+
+下载 json 文件，并把它放在你的博客项目根目录下的 shiki 文件夹中。
+
+```shell:no-line-numbers{2-3}
+. # Hexo project root.
+├─ shiki # Shiki theme folder
+│  ├─ aurora-future.json # VSCode theme JSON file
+├─ _config.yml # Hexo config file.
+└─ _config.aurora.yml # Theme config file.
+```
+
+然后配置这个主题明到 `_config.aurora.yml` 里面的 `theme` 和 `customTheme` 字段。
+
+```yaml:no-line-numbers{3-4}
+shiki:
+  enable: true
+  theme: aurora-future
+  customTheme: '/shiki/aurora-future.json'
+  backgroundColor: "#1a1a1a"
+```
+
+### 自定义背景颜色
+
+Shiki 主题支持它自己的主题代码背景。但并不是所有的主题背景颜色都能很好地配合 Aurora 博客主题。
+
+默认情况下，建议使用 `#1a1a1a` 作为极光主题的代码背景颜色。但是，如果您想使用代码高亮主题的默认背景色。只需删除' backgroundColor '配置即可。
+
+```yaml:no-line-numbers
+shiki:
+  enable: true
+  theme: aurora-future
+  customTheme: '/shiki/aurora-future.json'
+```
+
+如果您想使用自己的背景颜色，只需选择您想要的 HEX 颜色代码。
+
+```yaml:no-line-numbers{5}
+shiki:
+  enable: true
+  theme: aurora-future
+  customTheme: '/shiki/aurora-future.json'
+  backgroundColor: "<color_code_here>"
+```

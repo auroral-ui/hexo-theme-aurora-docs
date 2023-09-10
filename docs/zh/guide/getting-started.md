@@ -71,7 +71,7 @@ https://github.com/auroral-ui/hexo-theme-aurora/blob/main/_config.yml
 
 ---
 
-### 步骤 3 - Setting `theme`
+### 步骤 3 - 配置 `theme`
 
 因为要告诉 hexo 你要用的主题是 `aurora` 所以需要把 `_config.yml` 中的 `theme` 值改为 `aurora`
 
@@ -109,26 +109,31 @@ pretty_urls:
 
 ### 步骤 5 - 设置代码高亮
 
-> **最后主题是使用 `Prismjs` 来实现代码高亮显示，但 Hexo 默认是使用 `highlightjs`，因此你需要更改 Hexo 配置来使用 `Prismjs`:**
+> 主题 **2.5 版本**开始主题已经改为使用 [Shiki](https://github.com/shikijs/shiki) 作为代码高亮引擎。`Shiki`支持使用从 VSCode 导出的主题。颜色标记化与 VSCode 相同! Shiki 默认还支持了一些最多人使用的主题哦！
 
-- 把 `highlight` 的启用改为`false`
-- 把 `prismjs` 的启用改为`true`
-- 把 `prismjs` 下的 `preprocess` 改为 `false`
+首先，我们需要禁用 `_config.yml` 中的 `highlight` 和 `prismjs` 。
 
-```yaml:no-line-numbers{2,9-10}
+```yaml:no-line-numbers{2,4}
 highlight:
   enable: false
-  line_number: true
-  auto_detect: false
-  tab_replace: ''
-  wrap: true
-  hljs: false
 prismjs:
-  enable: true
-  preprocess: false
-  line_number: true
-  tab_replace: ''
+  enable: false
 ```
+
+然后将以下配置添加到主题配置文件 `_config.aurora.yml` 中
+
+```yaml:no-line-numbers{4-6}
+#! ---------------------------------------------------------------
+#! Highlighter Shiki
+#! ---------------------------------------------------------------
+shiki:
+  enable: true
+  backgroundColor: '#1a1a1a'
+```
+
+:::tip 高级使用
+更多高级代码高亮配置请查看[这里](/zh/configs/theme.thml#代码高亮)
+:::
 
 ---
 

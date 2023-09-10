@@ -103,3 +103,123 @@ Setting `feature` to `false` will force the theme to use `Pinned Layout`.
 :::tip
 After changing the `feature` you will need to re-run `hexo cl & hexo g` to take effect.
 :::
+
+## Code Highlight
+
+Aurora now use Shiki as the code highlight engine, for it to work we need to update the `highlight` and `prismjs` configs in `_config.yml`.
+
+```yaml:no-line-numbers{2,4}
+highlight:
+  enable: false
+prismjs:
+  enable: false
+```
+
+Then add the new `shiki` config in your `_config.aurora.yml` config file.
+
+```yaml:no-line-numbers
+#! ---------------------------------------------------------------
+#! Highlighter Shiki
+#! ---------------------------------------------------------------
+shiki:
+  enable: true
+  theme:
+  externalTheme:
+  backgroundColor: '#1a1a1a'
+```
+
+### Using the provided themes
+
+Choose a theme name from the list below and config it to the `theme` parameter.
+
+```yaml:no-line-numbers{3}
+shiki:
+  enable: true
+  theme: material-theme-palenight
+  externalTheme:
+  backgroundColor: '#1a1a1a'
+```
+
+Available default themes:
+
+```typescript:no-line-numbers
+export type Theme =
+  | 'css-variables'
+  | 'dark-plus'
+  | 'dracula-soft'
+  | 'dracula'
+  | 'github-dark-dimmed'
+  | 'github-dark'
+  | 'github-light'
+  | 'hc_light'
+  | 'light-plus'
+  | 'material-theme-darker'
+  | 'material-theme-lighter'
+  | 'material-theme-ocean'
+  | 'material-theme-palenight'
+  | 'material-theme'
+  | 'min-dark'
+  | 'min-light'
+  | 'monokai'
+  | 'nord'
+  | 'one-dark-pro'
+  | 'poimandres'
+  | 'rose-pine-dawn'
+  | 'rose-pine-moon'
+  | 'rose-pine'
+  | 'slack-dark'
+  | 'slack-ochin'
+  | 'solarized-dark'
+  | 'solarized-light'
+  | 'vitesse-dark'
+  | 'vitesse-light';
+```
+
+### Using Custom Themes
+
+If none of above are what you want then you import your own by downloading the theme json file from a Github repo.
+
+For example the VSCode theme I made [aurora-future-vscode-theme](https://github.com/auroral-ui/aurora-future-vscode-theme), this theme can be download from [here](https://github.com/auroral-ui/aurora-future-vscode-theme/blob/main/themes/Aurora%20Future-color-theme.json).
+
+Download the `json` file and put it in the `shiki` folder in your blog project root.
+
+```shell:no-line-numbers{2-3}
+. # Hexo project root.
+├─ shiki # Shiki theme folder
+│  ├─ aurora-future.json # VSCode theme JSON file
+├─ _config.yml # Hexo config file.
+└─ _config.aurora.yml # Theme config file.
+```
+
+Now adding the theme path to the `_config.aurora.yml` under `shiki` config.
+
+```yaml:no-line-numbers{3-4}
+shiki:
+  enable: true
+  theme: aurora-future
+  customTheme: '/shiki/aurora-future.json'
+  backgroundColor: "#1a1a1a"
+```
+
+### Custom background color
+
+Themes with Shiki support it's own theme background. But not all the theme background color will goes well with the theme.
+
+By default it is recommended to use `#1a1a1a` for the Aurora Theme. However if you want to use the default background color from the theme you pick. Just simply remove the `backgroundColor` config.
+
+```yaml:no-line-numbers
+shiki:
+  enable: true
+  theme: aurora-future
+  customTheme: '/shiki/aurora-future.json'
+```
+
+If you want to use a background color of your own, simply pick a HEX color code that you desire.
+
+```yaml:no-line-numbers{5}
+shiki:
+  enable: true
+  theme: aurora-future
+  customTheme: '/shiki/aurora-future.json'
+  backgroundColor: "<color_code_here>"
+```

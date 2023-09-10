@@ -109,25 +109,26 @@ pretty_urls:
 
 ### Step 5 - Setting up code highlight
 
-> **Last but not least, the theme use `Prismjs` for code highlighting, but Hexo default uses `highlightjs`, therefore you will need to change the Hexo config to use Prismjs instead:**
+> Since **version 2.5** the theme had changed to use [Shiki](https://github.com/shikijs/shiki) as the code highlight engine. `Shiki` support using the themes exported from VSCode. The color tokenization is the same as VSCode!
 
-:::tip
-All you have to do is change highlight's enable to `false` and change prismjs's enable to `true`
-:::
+First we need to disabled both `highlight` and `prismjs` inside `_config.yml`
 
-```yaml:no-line-numbers{2,9-10}
+```yaml:no-line-numbers{2,4}
 highlight:
   enable: false
-  line_number: true
-  auto_detect: false
-  tab_replace: ''
-  wrap: true
-  hljs: false
 prismjs:
+  enable: false
+```
+
+Then add the following config into the theme config `_config.aurora.yml`
+
+```yaml:no-line-numbers{4-6}
+#! ---------------------------------------------------------------
+#! Highlighter Shiki
+#! ---------------------------------------------------------------
+shiki:
   enable: true
-  preprocess: false
-  line_number: true
-  tab_replace: ''
+  backgroundColor: '#1a1a1a'
 ```
 
 ---

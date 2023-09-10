@@ -1,12 +1,16 @@
-import type { NavbarConfig } from '@vuepress/theme-default'
+import type { NavbarConfig } from '@vuepress/theme-default';
 
 export const en: NavbarConfig = [
   {
     text: 'Guide',
-    link: '/guide/',
+    link: '/guide/'
+  },
+  {
+    text: 'Upgrade',
+    link: '/upgrade/'
   },
   {
     text: '☕️ Buy me a Coffee',
-    link: 'https://www.buymeacoffee.com/tridiamond',
-  },
-]
+    link: 'https://www.buymeacoffee.com/tridiamond'
+  }
+];

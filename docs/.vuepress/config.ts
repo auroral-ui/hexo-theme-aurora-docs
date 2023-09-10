@@ -1,7 +1,6 @@
 import * as chokidar from 'chokidar';
 import { defaultTheme, defineUserConfig } from 'vuepress';
 
-import { searchPlugin } from '@vuepress/plugin-search';
 import { docsearchPlugin } from '@vuepress/plugin-docsearch';
 import { colors, logger } from '@vuepress/utils';
 
@@ -10,7 +9,7 @@ import { navbar, sidebar } from './configs';
 export default defineUserConfig({
   lang: 'en-US',
   title: 'Hexo Aurora',
-  description: 'Documentation of theme usage.',
+  description: 'Documentation for hexo-theme-aurora',
   head: [
     [
       'link',
@@ -54,6 +53,7 @@ export default defineUserConfig({
     docsDir: 'docs',
     colorMode: 'dark',
     colorModeSwitch: false,
+    sidebarDepth: 1,
     locales: {
       '/': {
         // navbar
