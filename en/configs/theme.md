@@ -48,8 +48,6 @@ theme:
 
 ## Feature Layout
 
-![](/images/screenshots/feature-layout.png)
-
 Feature layout is a section where you display specially selected articles to your visitor on your home page.
 
 This section can display `three` feature articles at a time. The generation engine will choose the `three latest` articles that use the `feature: true` in the Front-Meta of your article markdown file.
@@ -76,8 +74,6 @@ Oh, I see. Wait!? You said: **"Always have 3 feature articles."**. What if I onl
 **No worries**! The Aurora engine had taken care of that too. If the engine could not get enough articles to fill up to 3 feature articles, the "Feature Layout" will automatically change to `Pinned Layout` instead.
 
 ## Pinned Layout
-
-![](/images/screenshots/pinned-layout.png)
 
 The "Pinned Layout" can be enabled by setting the `feature` property to `false` in the `_config.aurora.yml` configuration file
 

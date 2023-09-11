@@ -129,11 +129,11 @@ hexo clean & hexo g & hexo server
 Any configuration changes will require you to regenerate all the Hexo static files!
 :::
 
-After all the files finish generating, you will be able to visit your blog on [https://localhost:4000](https://localhost:4000).
+After all the files finish generating, you will be able to visit your blog on localhost:4000.
 
 ## What is next?
 
 There are two places you should check out next:
 
-1. Setting up your [Page](/guide/page.html)
-2. Advance [configurations](/guide/configuration.html) document
+1. Setting up your [Page](../configs/page)
+2. Advance [configurations](../configs/general) document

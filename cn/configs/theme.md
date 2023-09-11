@@ -46,8 +46,6 @@ theme:
 
 ## 推荐布局模式
 
-![](/images/screenshots/feature-layout.png)
-
 推荐模式会启用一个特殊的区域，让你可以展示特别选定的文章。这个区域可以同时显示`三篇`推荐文章。
 
 生成引擎会从你的文章库中选择`最新的三篇文章`，而这个引擎会根据你的 markdown 的 Front-Meta 中的 `feature` 属性来选择文章。只要这个属性是 `true`，就会被筛选出来作为推荐文章。
@@ -74,8 +72,6 @@ theme:
 **别担心**！Aurora 的引擎也已经解决了这个问题。如果引擎不能找到足够的文章来填补一共 3 篇推荐文章，主题的布局将自动改为“**置顶布局模式**”。
 
 ## 置顶布局模式
-
-![](/images/screenshots/pinned-layout.png)
 
 可以通过在`_config.aurora.yml`中设置`feature`属性为`false`来启用置顶布局模式。
 

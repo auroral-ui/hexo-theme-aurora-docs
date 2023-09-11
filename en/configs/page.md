@@ -184,11 +184,11 @@ menu:
 
 First you need to set the following attributes:
 
-| Attributes | Description                                                                                |
-| :--------: | :----------------------------------------------------------------------------------------- |
-|   `name`   | Name of the menu for this page. (Used identify this route, make sure it's unique.)         |
-|   `i18n`   | i18n menu option, check out [i18n menu](/guide/menu.html#i18n-menu) for more usage detail. |
-|   `path`   | For custom page, here you need to use the template like this `/page/[page-folder-name]`    |
+| Attributes | Description                                                                             |
+| :--------: | :-------------------------------------------------------------------------------------- |
+|   `name`   | Name of the menu for this page. (Used identify this route, make sure it's unique.)      |
+|   `i18n`   | i18n menu option, check out [i18n menu](./menu) for more usage detail.                  |
+|   `path`   | For custom page, here you need to use the template like this `/page/[page-folder-name]` |
 
 :::tip
 If you have multiple pages, you want to group the page into a sub-navigation. Then you can config it like this.

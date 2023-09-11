@@ -12,7 +12,7 @@ feature: true
 ---
 ```
 
-This `feature` property will allow the Aurora's engine to find these articles and add them into the feature list or pinned list. Which are used by the [Feature Layout](/guide/theme.html#feature-layout) or [Pinned Layout](/guide/theme.html#pinned-layout).
+This `feature` property will allow the Aurora's engine to find these articles and add them into the feature list or pinned list. Which are used by the [Feature Layout](./theme) or [Pinned Layout](./theme).
 
 ### Abstracts property
 
@@ -99,6 +99,6 @@ console.log('hello world')
 
 :::tip PREVIEW
 
-Check the preview of all these custom container in my [blog](https://blog.bennyxguo.com/post/b695af22372019b5213d1466cd06b4ba).
+Check the preview of all these custom container in my [blog](https://blog.bennyxguo.com/post/b695af22372019b5213d1466cd06b4ba){target="\_blank"}.
 
 :::

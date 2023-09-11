@@ -98,7 +98,7 @@ shiki:
 ```
 
 :::tip 高级使用
-更多高级代码高亮配置请查看[这里](/zh/configs/theme.thml#代码高亮)
+更多高级代码高亮配置请查看[这里](../configs/theme)
 :::
 
 ## 步骤 6 - 创建 “关于 (`about`)” 页面
@@ -134,11 +134,11 @@ hexo clean & hexo g & hexo server
 改变了任何配置都需要重新生成 Hexo 的静态文件！
 :::
 
-当文件都生成完毕之后，就可以通过 [https://localhost:4000](https://localhost:4000) 访问你的博客了。
+当文件都生成完毕之后，就可以通过 localhost:4000 访问你的博客了。
 
 ## 接下来该干啥？
 
 你的主题基本上是可以使用了，但是还有两个地方你需要去看看并且进行详细的配置:
 
-1. 配置你的 [Page（页面）](/guide/page.html)
-2. 高级[配置文档](/guide/configuration.html)
+1. 配置你的 [Page（页面）](../configs/page)
+2. 高级[配置文档](../configs/general)

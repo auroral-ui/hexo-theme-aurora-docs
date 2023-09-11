@@ -12,7 +12,7 @@ feature: true
 ---
 ```
 
-这个`feature`属性将允许 Aurora 引擎找到这些文章，并将它们添加到推荐列表或置顶列表数据中。使用[推荐布局模式](/zh/guide/theme.html#推荐布局模式)或[置顶布局模式](/zh/guide/theme.html#置顶布局模式)。
+这个`feature`属性将允许 Aurora 引擎找到这些文章，并将它们添加到推荐列表或置顶列表数据中。使用[推荐布局模式](./theme)或[置顶布局模式](./theme)。
 
 ### Abstracts 属性
 
@@ -47,8 +47,6 @@ Normal Tips Container
 :::
 ```
 
-![](/images/screenshots/tip.png)
-
 如果你不想使用默认的标题`TIP`，你可以使用以下方法重命名你的容器标题:
 
 ```markdown:no-line-numbers
@@ -62,8 +60,6 @@ Custom header
 :::
 ```
 
-![](/images/screenshots/tip-rename.png)
-
 ### Warning 容器
 
 ```markdown:no-line-numbers
@@ -72,8 +68,6 @@ Warning!!!
 :::
 ```
 
-![](/images/screenshots/warning.png)
-
 ### Danger 容器
 
 ```markdown:no-line-numbers
@@ -81,8 +75,6 @@ Warning!!!
 Danger!!!
 :::
 ```
-
-![](/images/screenshots/danger.png)
 
 ### Details 容器
 

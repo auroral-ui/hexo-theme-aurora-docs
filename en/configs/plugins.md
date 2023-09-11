@@ -8,12 +8,12 @@ This theme supports a couple of different plugins. Each plugin will provide adva
 
 This plugin supports multi-author, this feature is designed for multi-author blogs or communities.
 
-The concept is like this, as the default author, there is no need to write the author over and over in every post's markdown file. Therefore, in the [site configure](/guide/configuration.html#site-configs), there is an author property to set the default blog author. Once that is set, all your posts will inherit the default author, unless specified.
+The concept is like this, as the default author, there is no need to write the author over and over in every post's markdown file. Therefore, in the [site configure](./general), there is an author property to set the default blog author. Once that is set, all your posts will inherit the default author, unless specified.
 
 To setup different author for each article. There are two ways to setup authors for an article.
 
 :::tip
-Multi-author also supports **custom social links**，inside `author`'s `socials` property you can add a `customs` configuration. For full documentation on how to setup `custom` property, please refer to the [custom social link](/guide/social.html#custom-social-links) part of the document.
+Multi-author also supports **custom social links**，inside `author`'s `socials` property you can add a `customs` configuration. For full documentation on how to setup `custom` property, please refer to the [custom social link](./social) part of the document.
 :::
 
 ### Method 1

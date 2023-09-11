@@ -78,7 +78,7 @@ Even if you set a `path` for the parent link, the path link will be ignored.
 ### Internal Link
 
 :::tip
-Internal links can be added with a custom page. Please refer to the [Page](/guide/page.html) section of the document for usage details.
+Internal links can be added with a custom page. Please refer to the [Page](./page) section of the document for usage details.
 :::
 
 ## Multi-language Menu
