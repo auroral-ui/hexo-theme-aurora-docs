@@ -57,6 +57,7 @@ export default defineConfig({
   title: 'Hexo Aurora Docs',
   description: 'Hexo Aurora Theme Documentations and Guides',
   lastUpdated: true,
+  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
 
   locales: {
     root: {

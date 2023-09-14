@@ -33,4 +33,13 @@ features:
   - icon: ⚡️
     title: Lightning fast
     details: With the boost performance by Vue3, whole blog's performance had being lifted.
+  - icon: 👬
+    title: Friends Links
+    details: Able to list all your friends' blog link in category.
+  - icon: 🤖
+    title: Dia Bot
+    details: A bot that can interact smartly with your viewers, provide more engaging reading experience.
+  - icon: 🔥
+    title: Feature Post
+    details: Feature and Pin mode support for the home page.
 ---

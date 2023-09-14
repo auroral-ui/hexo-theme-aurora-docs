@@ -27,4 +27,13 @@ features:
   - icon: ⚡️
     title: 高性能
     details: 使用 Vue3 给整个博客主题带来了整体的性能提升。
+  - icon: 👬
+    title: 友链
+    details: 可以让你把所有朋友的播客链接按分类展示。
+  - icon: 🤖
+    title: 小钻机器人
+    details: 一个可以与你的观众进行智能互动的机器人，提供更吸引人的阅读体验。
+  - icon: 🔥
+    title: 推荐文章
+    details: 首页支持推荐文章和置顶文章模式。
 ---
