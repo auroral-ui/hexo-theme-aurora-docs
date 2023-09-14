@@ -59,7 +59,7 @@ export default defineConfig({
   lastUpdated: true,
 
   locales: {
-    en: {
+    root: {
       label: 'English',
       lang: 'en',
       link: '/en/'
