@@ -80,15 +80,15 @@ export default defineConfig({
       {
         text: 'Guide 指南',
         items: [
-          { text: 'Guide (English)', link: '/en/guide/getting-started.md' },
-          { text: '指南 (中文)', link: '/cn/guide/getting-started.md' }
+          { text: '🇬🇧 Guide', link: '/en/guide/getting-started.md' },
+          { text: '🇨🇳 指南', link: '/cn/guide/getting-started.md' }
         ]
       },
       {
         text: 'Upgrade 升级',
         items: [
-          { text: 'Upgrade (English)', link: '/en/upgrade/' },
-          { text: '升级 (中文)', link: '/cn/upgrade/' }
+          { text: '🇬🇧 Upgrade', link: '/en/upgrade/' },
+          { text: '🇨🇳 升级', link: '/cn/upgrade/' }
         ]
       },
       {
