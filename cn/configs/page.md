@@ -77,7 +77,7 @@ menu:
 
 友链页面用于展示博主朋友的博客。页面的名字叫 links
 
-要创建这个默认的 links 页，只需要执行这个 `Hexo 的命令`：
+要创建这个默认的 `links` 页，只需要执行这个 `Hexo 的命令`：
 
 ```shell:no-line-numbers
 hexo new page links
@@ -85,7 +85,7 @@ hexo new page links
 
 执行完毕后，你会发现在 `source/` 文件中多处了一个新的文件夹：
 
-```shell:no-line-numbers
+```shell
 .
 └── source
     └── links

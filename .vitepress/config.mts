@@ -107,6 +107,7 @@ export default defineConfig({
         {
           text: 'Upgrade Guide',
           items: [
+            { text: 'Upgrade to v2.5.2', link: '/en/upgrade/v2.5.2.md' },
             { text: 'Upgrade to v2.5', link: '/en/upgrade/v2.5.md' },
             { text: 'Upgrade to v2.0', link: '/en/upgrade/v2.0.md' }
           ]
@@ -119,6 +120,7 @@ export default defineConfig({
         {
           text: '升级指南',
           items: [
+            { text: '升级到 v2.5.2', link: '/cn/upgrade/v2.5.2.md' },
             { text: '升级到 v2.5', link: '/cn/upgrade/v2.5.md' },
             { text: '升级到 v2.0', link: '/cn/upgrade/v2.0.md' }
           ]

@@ -42,7 +42,7 @@ menu:
       en: Message board
 ```
 
-## Creating the `about` page
+## Creating the about page
 
 The theme enables `about` page by default, therefore we should create it before using the theme.
 
@@ -74,7 +74,7 @@ menu:
 
 You can feel free to edit the markdown file inside the `about/` folder, the content will be displayed in your about page.
 
-## Create the `links` page
+## Create the links page
 
 This page is to display a list of all your friends' blogs.
 
@@ -102,7 +102,7 @@ menu:
   About: true
   Tags: true
   Archives: true
-  Friends: true
+  Links: true
 ```
 
 Basic configuration for the `links` page is done inside the `index.md` using the `Front-meta` configs.
